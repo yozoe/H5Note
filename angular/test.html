@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../library/angular.min.js"></script>
+    <link rel="stylesheet" href="../library/bootstrap.min.css" />
+    <style>
+
+    </style>
+</head>
+<body ng-app="app">
+<div ng-controller="MyCtrl">
+    <input type="text" ng-model="hehe" />
+    <div class="{{hehe}}">{{reverse()}}</div>
+
+    <input type="text" ng-model="user.name" />
+    <br />
+    <input type="password" ng-model="user.password" />
+    <div class="btn-primary" ng-show="message.length>0">{{message}}</div>
+    <button class="btn btn-primary" ng-click="login()">button</button>
+</div>
+<script>
+    angular.module('app', []).controller('MyCtrl', function($scope) {
+        $scope.hehe = "hehe";
+        $scope.user = {'name':'', 'password':''};
+        $scope.message = "";
+        $scope.reverse = function () {
+            return $scope.hehe.split("").reverse().join("");
+        }
+        $scope.login = function () {
+            if ($scope.user.name == "admin" && $scope.user.password == "123") {
+                alert("登录成功");
+            } else {
+                return $scope.message = "用户名或密码错误";
+            }
+        }
+    });
+</script>
+</body>
+</html>

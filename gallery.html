@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="library/jquery-2.2.0.min.js"></script>
+    <script>
+        var arr = new Array("BuickExcelle", "BuickExcelleXT", "BuickGL8", "BYDF0");
+        var currentIndex = 0;
+
+        $(function(){
+
+            for (var i = 0; i < arr.length; i++) {
+                var img = $("<img/>", {"src" : "./images/" + arr[i] + ".jpg"}).css("width", "200px").css("height", "150px").appendTo("#gallery");
+                if (i > 0) {
+                    $(img).hide();
+                }
+            }
+
+            $("#btn1").click(function (e) {
+                var current = $("img:visible").hide();
+                $(current).next().show();
+                $("#gallery").append($(current));
+            });
+
+            $("#btn2").click(function (e) {
+                $("img:visible").hide();
+                $("img:last").prependTo("#gallery").show();
+            });
+
+
+        });
+
+    </script>
+</head>
+<body>
+<div id="gallery">
+
+</div>
+<button id="btn1"><<</button>
+<button id="btn2">>></button>
+</body>
+</html>

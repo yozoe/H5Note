@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="result" style="border: dashed 1px red; width: 200px; height: 100px;">
+
+</div>
+<div onclick="hehe1" id="div1" style="width: 100px; height: 100px; background-color: red; padding: 20px;">
+    <input onclick="hehe2" id="input1" type="button" value="click me" />
+</div>
+<script>
+
+    console.log(0.1 + 0.2);
+
+    var h1 = document.getElementById("div1");
+    h1.onclick = function (e) {
+        hehe1();
+    }
+
+    var h2 = document.getElementById('input1');
+    h2.onclick = function () {
+        e = window.event || e;
+
+        if (!+"\v1") {
+            e.cancelBubble = true;
+    } else {
+        e.stopPropagation();
+    }
+
+    }
+
+    var result = document.getElementById('result');
+
+    function hehe1() {
+        result.innerHTML = '点击是div';
+    }
+    function hehe2() {
+        result.innerHTML = '点击的是input';
+    }
+</script>
+</body>
+</html>

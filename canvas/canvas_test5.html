@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<canvas id="cvs" width="500" height="500">
+
+</canvas>
+<script>
+    var myCanvas = document.getElementById("cvs");
+    var ctx = myCanvas.getContext("2d");
+
+    ctx.lineWidth = 20;
+    ctx.lineCap="square";
+    ctx.moveTo(100, 100);
+    ctx.lineTo(200, 100);
+    ctx.lineTo(200, 200);
+    ctx.lineTo(100, 200);
+    ctx.lineTo(100, 100);
+
+    ctx.closePath();
+
+    ctx.stroke();
+
+</script>
+</body>
+</html>

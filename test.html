@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+//    var scope = "global scope";
+//    function checkscope() {
+//        var scope = "local scope";
+//        function f() {
+//            return scope;
+//        }
+//        return f;
+//    }
+//    var result = checkscope()();
+//    document.write(result);
+    function counter() {
+        var n = 0;
+        return {
+            count : function () {
+                return n++;
+            },
+            reset : function () {
+                n = 0;
+            }
+        };
+    }
+
+    function hehe() {
+        this.mabi = 123;
+    }
+
+
+    var a = {
+        set a(hehe) {
+
+        }
+    };
+
+    var b = function () {
+    }
+
+//    alert(a.prototype);
+    new b();
+
+    function Range(from, to) {
+        this.from = from;
+        this.to = to;
+    }
+
+    Range.prototype = {
+
+    };
+
+    var r = new Range(1, 3);
+    document.write(r)
+</script>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<canvas id="cvs" width="500" height="500">
+
+</canvas>
+<script>
+    var myCanvas = document.getElementById("cvs");
+    var context = myCanvas.getContext("2d");
+    context.fillRect(0, 0, 500, 500);
+    context.moveTo(0, 100);
+    context.lineTo(500, 100);
+    context.strokeStyle='white';
+    context.lineWidth = 20;
+    context.stroke();
+
+//    myCanvas.style.width = '400px';
+
+
+</script>
+</body>
+</html>
