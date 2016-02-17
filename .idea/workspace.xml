@@ -2,70 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b52d46ff-da3a-448b-899a-d2e9ae846d8a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/BYDF0.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/BYDF3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/BuickExcelle.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/BuickExcelleXT.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/BuickGL8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ChevroletCruze.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ChevroletSail.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/FordFiesta.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/FordFox.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/HondaAccord.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/HondaCity.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/HondaFit.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/HyundaiElantra.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/HyundaiVerna.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mazda6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/NissanSylphy.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/NissanTiida.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Peugeot207.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Peugeot307.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Roewe350.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Roewe550.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ToyodaKamimizu.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ToyotaCarola.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ToyotaCorolla.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/VWBora.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/VWLavida.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/VWPolo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/banner.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/hot-price.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/person.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/11boot.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/9boot.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/angular.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jstest/attachEventTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/boot1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/canvas/canvas_test1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/canvas/canvas_test2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/canvas/canvas_test3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/canvas/canvas_test4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/canvas/canvas_test5.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/canvas/canvas_test6.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/canvas/canvas_test7.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/center_div.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/chajiantest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cssyouxianji.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gallery.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/houtai.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/huaxueba/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/jquery-2.2.0.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/jquery-2.2.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jquerytest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jstest/null_undefined.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/pop.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/shange.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tablerow.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jstest/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/videotest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/voidtest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/简易祖玛.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/事件/1.拖拽原理.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript面向对象/10继承的拖拽.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript面向对象/1包装对象.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript面向对象/2包装对象.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript面向对象/3原型链.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript面向对象/4hasOwnProperty.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript面向对象/5constructor.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript面向对象/6instanceof.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript面向对象/7toString.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript面向对象/8继承.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript面向对象/9对象的复制.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/事件/全局捕获.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/事件/拖拽的原理2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript面向对象/面向对象拖拽.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript面向对象/面向对象选项卡.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript面向对象/面向对象选项卡1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript面向对象/面向对象选项卡3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript面向对象/面向对象选项卡自动播放.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="H5Note.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,11 +41,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/angular/test.html">
+      <file leaf-file-name="2包装对象.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScript面向对象/2包装对象.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6703911">
-              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+            <state vertical-scroll-proportion="-11.25">
+              <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="3原型链.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScript面向对象/3原型链.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.0">
+              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="4hasOwnProperty.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScript面向对象/4hasOwnProperty.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.5">
+              <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="5constructor.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScript面向对象/5constructor.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.25">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="6instanceof.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScript面向对象/6instanceof.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.75">
+              <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="7toString.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScript面向对象/7toString.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.125">
+              <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="8继承.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScript面向对象/8继承.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.625">
+              <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="10继承的拖拽.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JavaScript面向对象/10继承的拖拽.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.49720672">
+              <caret line="82" column="75" selection-start-line="82" selection-start-column="75" selection-end-line="82" selection-end-column="75" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="面向对象拖拽.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScript面向对象/面向对象拖拽.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.0">
+              <caret line="77" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="96" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="9对象的复制.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScript面向对象/9对象的复制.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.5">
+              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="32" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -112,6 +157,27 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/JavaScript面向对象/面向对象选项卡.html" />
+        <option value="$PROJECT_DIR$/JavaScript面向对象/面向对象选项卡1.html" />
+        <option value="$PROJECT_DIR$/JavaScript面向对象/复习this指向.html" />
+        <option value="$PROJECT_DIR$/JavaScript面向对象/面向对象选项卡3.html" />
+        <option value="$PROJECT_DIR$/JavaScript面向对象/面向对象选项卡自动播放.html" />
+        <option value="$PROJECT_DIR$/事件/1.拖拽原理.html" />
+        <option value="$PROJECT_DIR$/事件/全局捕获.html" />
+        <option value="$PROJECT_DIR$/事件/拖拽的原理2.html" />
+        <option value="$PROJECT_DIR$/JavaScript面向对象/面向对象拖拽.html" />
+        <option value="$PROJECT_DIR$/JavaScript面向对象/包装对象.html" />
+        <option value="$PROJECT_DIR$/JavaScript面向对象/2包装对象.html" />
+        <option value="$PROJECT_DIR$/JavaScript面向对象/3原型链.html" />
+        <option value="$PROJECT_DIR$/JavaScript面向对象/4hasOwnProperty.html" />
+        <option value="$PROJECT_DIR$/JavaScript面向对象/5constructor.html" />
+        <option value="$PROJECT_DIR$/JavaScript面向对象/instanceof.html" />
+        <option value="$PROJECT_DIR$/JavaScript面向对象/6instanceof.html" />
+        <option value="$PROJECT_DIR$/JavaScript面向对象/7toString.html" />
+        <option value="$PROJECT_DIR$/JavaScript面向对象/8集成.html" />
+        <option value="$PROJECT_DIR$/JavaScript面向对象/9对象的复制.html" />
+        <option value="$PROJECT_DIR$/JavaScript面向对象/8继承.html" />
+        <option value="$PROJECT_DIR$/JavaScript面向对象/10继承的拖拽.html" />
       </list>
     </option>
   </component>
@@ -134,7 +200,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -167,6 +233,34 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="H5Note" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="H5Note" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="H5Note" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="事件" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="H5Note" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="H5Note" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaScript面向对象" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -219,6 +313,9 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b52d46ff-da3a-448b-899a-d2e9ae846d8a" name="Default" comment="" />
@@ -230,13 +327,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="46" width="1280" height="707" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -245,11 +344,17 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -259,10 +364,174 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/JavaScript面向对象/面向对象选项卡自动播放.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30726257">
+          <caret line="69" column="25" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript面向对象/面向对象选项卡1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38547486">
+          <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="54" selection-end-column="61" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/简易祖玛.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.972067">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/angular/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6703911">
-          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.30726257">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/事件/1.拖拽原理.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.041667">
+          <caret line="33" column="46" selection-start-line="0" selection-start-column="0" selection-end-line="44" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/事件/全局捕获.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.375">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/事件/拖拽的原理2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.125">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript面向对象/面向对象选项卡3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.583333">
+          <caret line="50" column="48" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript面向对象/面向对象选项卡.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.125">
+          <caret line="37" column="13" selection-start-line="24" selection-start-column="12" selection-end-line="37" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript面向对象/1包装对象.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.75">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript面向对象/2包装对象.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.25">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript面向对象/3原型链.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript面向对象/4hasOwnProperty.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.5">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript面向对象/5constructor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.25">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript面向对象/6instanceof.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.75">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript面向对象/7toString.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.125">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript面向对象/9对象的复制.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.5">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="32" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript面向对象/8继承.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.625">
+          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript面向对象/面向对象拖拽.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.0">
+          <caret line="77" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="96" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript面向对象/10继承的拖拽.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49720672">
+          <caret line="82" column="75" selection-start-line="82" selection-start-column="75" selection-end-line="82" selection-end-column="75" />
           <folding />
         </state>
       </provider>

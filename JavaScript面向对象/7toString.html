@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        //toString() :  系统对象下面都是自带的, 自己写的对象都是通过原型链找object下面的
+
+        var arr = [];
+//        alert(arr.toString);
+
+        function Aaa() {
+
+        }
+
+        var a1 = new Aaa();
+//        alert(a1.toString);
+
+        alert(Object.prototype.toString.call(arr) == '[object Array]');
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
