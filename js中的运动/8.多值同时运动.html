@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #div1 {
+            width: 100px;
+            height: 200px;
+            background: red;
+            position: absolute;
+            left: -100px;
+            top: 100px;
+        }
+
+        #div2 {
+            width: 30px;
+            height: 60px;
+            background: black;
+            position: absolute;
+            right: -30px;
+            top: 70px;
+            text-align: center;
+            color: white;
+        }
+
+        #img1 {
+            opacity: 0.3;
+            filter: alpha(opacity=30);/* ie */
+            margin-left: 200px;
+        }
+
+    </style>
+    <script>
+        window.onload = function() {
+            var oDiv1 = document.getElementById('div1');
+            var oDiv2 = document.getElementById('div2');
+            var img1 = document.getElementById('img1');
+//            var iTimer = null;
+
+            oDiv1.onmouseover = function() {
+                startMove(this,'left', 0, 10);
+            }
+
+            oDiv1.onmouseout = function() {
+                startMove(this,'left', -100, -10);
+            }
+
+            img1.onmouseover = function() {
+                startMove(this, 'opacity',100, 10);
+            }
+
+            img1.onmouseout = function() {
+                startMove(this, 'opacity',30, -10);
+            }
+
+
+            function startMove(obj, attr,iTarget, iSpeed) {
+                clearInterval(obj.iTimer);
+
+                var iCur = 0;
+
+                obj.iTimer = setInterval(function(){
+
+
+                    if (attr == 'opacity') {
+                        iCur = Math.round(css(obj, 'opacity') * 100);//标准0.3, ie0.3
+                    } else {
+                        //去掉单位
+                        iCur = parseInt(css(obj, attr));
+                    }
+
+
+                    if (iCur == iTarget) {
+                        clearInterval(obj.iTimer);
+                    } else {
+                        if (attr == 'opacity') {
+                            obj.style.opacity = (iCur + iSpeed) / 100;
+                            obj.style.filter = 'alpha(opacity=' + (iCur + iSpeed) + ')';
+                        } else {
+                            obj.style[attr] = iCur + iSpeed + 'px';
+                        }
+
+                    }
+                }, 30);
+            }
+
+            function css(obj, attr) {
+                if (obj.currentStyle) {
+                    return obj.currentStyle[attr];
+                } else {
+                    return getComputedStyle(obj, false)[attr];
+                }
+            }
+
+
+
+        };
+
+    </script>
+</head>
+<body>
+<div id="div1">
+    <div id="div2">
+        分享到
+    </div>
+</div>
+<img src="../banner.jpg" id="img1" />
+</body>
+</html>

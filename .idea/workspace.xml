@@ -2,16 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b52d46ff-da3a-448b-899a-d2e9ae846d8a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js中的运动/1.运动基础.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript面向对象/12原型继承.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js中的运动/2.简单运动的封装.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DOM/3.firstChild,lastChild,nextSibling,previsousSibling.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js中的运动/3.运动的分享到.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js中的运动/4.运动的分享到合并.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/你真的了解js吗/break跳出大循环.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DOM/childNodes.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/你真的了解js吗/匿名函数自执行.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript面向对象/类试继承.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js中的运动/运动框架实例/1.多图片展开,收缩.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js中的运动/10.运动回调-链式运动.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js中的运动/11.摩擦运动.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js中的运动/12.缓冲运动.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js中的运动/13.css解析和js解析.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js中的运动/14.运动框架加入缓冲.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js中的运动/5.淡入淡出的图片.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js中的运动/6.小数精度问题.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js中的运动/7.多物体的运动.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js中的运动/8.多值同时运动.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js中的运动/9.多值同时运动.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js中的运动/move.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js中的运动/淡入淡出的图片.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="H5Note.iws" />
@@ -33,41 +36,103 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="7.多物体的运动.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js中的运动/7.多物体的运动.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.333333">
+              <caret line="46" column="49" selection-start-line="0" selection-start-column="0" selection-end-line="82" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="9.多值同时运动.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js中的运动/9.多值同时运动.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.0">
+              <caret line="46" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="92" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="10.运动回调-链式运动.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js中的运动/10.运动回调-链式运动.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="5.0416665">
+              <caret line="28" column="55" selection-start-line="0" selection-start-column="0" selection-end-line="96" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="11.摩擦运动.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js中的运动/11.摩擦运动.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.083333">
+              <caret line="25" column="29" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="12.缓冲运动.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js中的运动/12.缓冲运动.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.5">
+              <caret line="40" column="56" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="14.运动框架加入缓冲.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js中的运动/14.运动框架加入缓冲.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-21.208334">
+              <caret line="89" column="13" selection-start-line="32" selection-start-column="12" selection-end-line="89" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1.多图片展开,收缩.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js中的运动/运动框架实例/1.多图片展开,收缩.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.73654914">
+              <caret line="76" column="50" selection-start-line="76" selection-start-column="50" selection-end-line="76" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="move.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js中的运动/move.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="13.css解析和js解析.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js中的运动/13.css解析和js解析.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.083333">
+              <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="1.运动基础.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js中的运动/1.运动基础.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.166667">
-              <caret line="18" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2.简单运动的封装.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js中的运动/2.简单运动的封装.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.333333">
-              <caret line="20" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="48" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="3.运动的分享到.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js中的运动/3.运动的分享到.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.333333">
-              <caret line="53" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="80" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="4.运动的分享到合并.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js中的运动/4.运动的分享到合并.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3320965">
-              <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+            <state vertical-scroll-proportion="-10.958333">
+              <caret line="32" column="49" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -79,6 +144,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Html5" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -120,6 +186,20 @@
         <option value="$PROJECT_DIR$/js中的运动/2.简单运动的封装.html" />
         <option value="$PROJECT_DIR$/js中的运动/3.运动的分享到.html" />
         <option value="$PROJECT_DIR$/js中的运动/4.运动的分享到合并.html" />
+        <option value="$PROJECT_DIR$/js中的运动/小数精度问题.html" />
+        <option value="$PROJECT_DIR$/js中的运动/淡入淡出的图片.html" />
+        <option value="$PROJECT_DIR$/js中的运动/5.淡入淡出的图片.html" />
+        <option value="$PROJECT_DIR$/js中的运动/8.多值同时运动.html" />
+        <option value="$PROJECT_DIR$/js中的运动/7.多物体的运动.html" />
+        <option value="$PROJECT_DIR$/js中的运动/9.多值同时运动.html" />
+        <option value="$PROJECT_DIR$/js中的运动/10.运动回调-链式运动.html" />
+        <option value="$PROJECT_DIR$/js中的运动/11.摩擦运动.html" />
+        <option value="$PROJECT_DIR$/js中的运动/css解析和js解析.html" />
+        <option value="$PROJECT_DIR$/js中的运动/13.css解析和js解析.html" />
+        <option value="$PROJECT_DIR$/js中的运动/12.缓冲运动.html" />
+        <option value="$PROJECT_DIR$/js中的运动/14.运动框架加入缓冲.html" />
+        <option value="$PROJECT_DIR$/js中的运动/move.js" />
+        <option value="$PROJECT_DIR$/js中的运动/运动框架实例/1.多图片展开,收缩.html" />
       </list>
     </option>
   </component>
@@ -205,34 +285,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="H5Note" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="H5Note" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js中的运动" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="H5Note" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="H5Note" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DOM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -303,13 +355,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="34" width="1280" height="707" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -336,34 +388,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/JavaScript面向对象/3原型链.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript面向对象/4hasOwnProperty.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript面向对象/5constructor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JavaScript面向对象/6instanceof.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -425,7 +455,7 @@
         <state vertical-scroll-proportion="0.30726257">
           <caret line="69" column="25" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -460,7 +490,7 @@
         <state vertical-scroll-proportion="-13.041667">
           <caret line="33" column="46" selection-start-line="0" selection-start-column="0" selection-end-line="44" selection-end-column="7" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -487,7 +517,7 @@
         <state vertical-scroll-proportion="-11.583333">
           <caret line="50" column="48" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -497,7 +527,7 @@
         <state vertical-scroll-proportion="-20.125">
           <caret line="37" column="13" selection-start-line="24" selection-start-column="12" selection-end-line="37" selection-end-column="13" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -636,14 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js中的运动/1.运动基础.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.166667">
-          <caret line="18" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js中的运动/2.简单运动的封装.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.333333">
@@ -660,10 +682,132 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js中的运动/淡入淡出的图片.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.125">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js中的运动/6.小数精度问题.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.625">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js中的运动/4.运动的分享到合并.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3320965">
-          <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+        <state vertical-scroll-proportion="-6.8333335">
+          <caret line="47" column="76" selection-start-line="0" selection-start-column="0" selection-end-line="66" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js中的运动/5.淡入淡出的图片.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.208334">
+          <caret line="93" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="107" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js中的运动/8.多值同时运动.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.208334">
+          <caret line="109" column="7" selection-start-line="109" selection-start-column="7" selection-end-line="109" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js中的运动/7.多物体的运动.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.333333">
+          <caret line="46" column="49" selection-start-line="0" selection-start-column="0" selection-end-line="82" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js中的运动/9.多值同时运动.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0">
+          <caret line="46" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="92" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js中的运动/1.运动基础.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.958333">
+          <caret line="32" column="49" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js中的运动/13.css解析和js解析.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.083333">
+          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js中的运动/12.缓冲运动.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.5">
+          <caret line="40" column="56" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js中的运动/11.摩擦运动.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.083333">
+          <caret line="25" column="29" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js中的运动/10.运动回调-链式运动.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="5.0416665">
+          <caret line="28" column="55" selection-start-line="0" selection-start-column="0" selection-end-line="96" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cssyouxianji.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47309834">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js中的运动/14.运动框架加入缓冲.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.208334">
+          <caret line="89" column="13" selection-start-line="32" selection-start-column="12" selection-end-line="89" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js中的运动/move.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js中的运动/运动框架实例/1.多图片展开,收缩.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.73654914">
+          <caret line="76" column="50" selection-start-line="76" selection-start-column="50" selection-end-line="76" selection-end-column="50" />
           <folding />
         </state>
       </provider>
