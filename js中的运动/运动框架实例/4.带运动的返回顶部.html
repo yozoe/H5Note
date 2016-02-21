@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #div1 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+
+            var oDiv = document.getElementById('div1');
+
+            function setTop() {
+                var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+                oDiv.style.top = scrollTop + document.documentElement.clientHeight
+            }
+
+        }
+    </script>
+</head>
+<body style="height: 2000px;">
+<div id="div1"></div>
+</body>
+</html>
