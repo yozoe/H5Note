@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        /*
+        我们经常会用下载软件下载电视剧,一个电视剧可能有N集
+        1.先把所有的集数全部下载完成,然后一个个开开心心看.你的真的开心吗?
+        2.我们先下一集,然后看完,看完以后再去下下一集,然后再看.
+        3.我们先下第一集,下载完成以后,再看第一集的时候去下载后面的内容,这样,我们可以在看前面的内容的时候,把后面的下完了,节约了很多事件.
+
+        在页面刚打开的时候,我们去加载第一张图片,然后页面加载完成以后,在用户看的时间内,去加载后面的内容,那么我们必须有个工具(迅雷)
+        ->Image对象
+         */
+
+        window.onload = function() {
+            var oImage = new Image();
+            var oImg = document.getElementById('img1');
+
+            var arr = [
+                'http://img1.imgtn.bdimg.com/it/u=524667967,2954926626&fm=21&gp=0.jpg',
+                'http://pic5.nipic.com/20100121/4183722_103138000079_2.jpg',
+                'http://pic4.nipic.com/20091104/2645351_152840096265_2.jpg',
+                'http://pic12.nipic.com/20110217/6757620_105953632124_2.jpg',
+                'http://pic19.nipic.com/20120310/8061225_093309101000_2.jpg',
+                'http://img.win7china.com/NewsUploadFiles/20090823_121319_375_u.jpg',
+            ];
+
+            /*
+            属性:
+            src:当我们给Image对象的src属性赋值一个url的时候,这个Image对象就会去加载url资源,加载完成以后的资源被保存到了
+            浏览器的缓存文件夹里面,下次如果我们要去调用这个url地址的时候,直接是从缓存文件夹读取到的,所以速度很快.
+            onLoad:当资源加载完成的时候触发
+            onerror:当资源加载失败的时候触发
+             */
+
+            oImage.src = 'http://img2.imgtn.bdimg.com/it/u=3741094112,3917882686&fm=21&gp=0.jpg';
+            oImage.onload = function() {
+            }
+
+            oImage.onerror = function() {
+                alert('加载出错');
+            }
+
+//            document.onclick = function() {
+//                oImg.src = 'http://img2.imgtn.bdimg.com/it/u=3741094112,3917882686&fm=21&gp=0.jpg';
+//            }
+
+            var iCur = 0;
+            var i = 0;
+
+            xunlei();
+
+            oImg.onclick = function() {
+                i++
+                if (i < arr.length) {
+                    oImg.src = arr[i];
+                    console.log(oImg.src);
+                }
+            }
+
+            function xunlei() {
+                oImage.src = arr[iCur];
+                oImage.onload = function() {
+
+                    iCur++;
+
+                    if (iCur < arr.length) {
+                        xunlei();
+                    }
+
+                    document.title = iCur + '/' + arr.length;
+                }
+            }
+
+        }
+    </script>
+</head>
+<body>
+<img src="http://img1.imgtn.bdimg.com/it/u=524667967,2954926626&fm=21&gp=0.jpg" id="img1" width="300px" />
+</body>
+</html>

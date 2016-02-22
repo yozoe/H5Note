@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b52d46ff-da3a-448b-899a-d2e9ae846d8a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js中的运动/运动框架实例/2.带运动效果的留言本.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js中的运动/运动框架实例/3.淘宝首页幻灯片.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js中的运动/运动框架实例/4.带运动的返回顶部.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js中的运动/运动框架实例/5.图片的预先加载.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DOM/5.父节点.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DOM/6.offsetParent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js中的运动/运动框架实例/7.按需加载.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js中的运动/运动框架实例/4.带运动的返回顶部.html" afterPath="$PROJECT_DIR$/js中的运动/运动框架实例/4.带运动的返回顶部.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="H5Note.iws" />
@@ -26,56 +28,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="10.运动回调-链式运动.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js中的运动/10.运动回调-链式运动.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="5.0416665">
-              <caret line="28" column="55" selection-start-line="0" selection-start-column="0" selection-end-line="96" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="11.摩擦运动.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js中的运动/11.摩擦运动.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.083333">
-              <caret line="25" column="29" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="12.缓冲运动.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js中的运动/12.缓冲运动.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.5">
-              <caret line="40" column="56" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="14.运动框架加入缓冲.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js中的运动/14.运动框架加入缓冲.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.208334">
-              <caret line="89" column="13" selection-start-line="32" selection-start-column="12" selection-end-line="89" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="1.多图片展开,收缩.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js中的运动/运动框架实例/1.多图片展开,收缩.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.541666">
-              <caret line="76" column="50" selection-start-line="76" selection-start-column="50" selection-end-line="76" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="2.带运动效果的留言本.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js中的运动/运动框架实例/2.带运动效果的留言本.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -103,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="4.带运动的返回顶部.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="4.带运动的返回顶部.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js中的运动/运动框架实例/4.带运动的返回顶部.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5009276">
-              <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+            <state vertical-scroll-proportion="-5.625">
+              <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -115,11 +67,61 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="move.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js中的运动/move.js">
+      <file leaf-file-name="5.图片的预先加载.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js中的运动/运动框架实例/5.图片的预先加载.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+            <state vertical-scroll-proportion="-4.3333335">
+              <caret line="58" column="40" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="7.按需加载.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js中的运动/运动框架实例/7.按需加载.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.958333">
+              <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="3.firstChild,lastChild,nextSibling,previsousSibling.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DOM/3.firstChild,lastChild,nextSibling,previsousSibling.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.25">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="childNodes.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DOM/childNodes.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.625">
+              <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="5.父节点.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DOM/5.父节点.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.208333">
+              <caret line="18" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="6.offsetParent.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DOM/6.offsetParent.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.27829313">
+              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -141,9 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test.html" />
-        <option value="$PROJECT_DIR$/JavaScript面向对象/面向对象选项卡.html" />
-        <option value="$PROJECT_DIR$/JavaScript面向对象/面向对象选项卡1.html" />
         <option value="$PROJECT_DIR$/JavaScript面向对象/复习this指向.html" />
         <option value="$PROJECT_DIR$/JavaScript面向对象/面向对象选项卡3.html" />
         <option value="$PROJECT_DIR$/JavaScript面向对象/面向对象选项卡自动播放.html" />
@@ -190,6 +189,11 @@
         <option value="$PROJECT_DIR$/js中的运动/运动框架实例/2.带运动效果的留言本.html" />
         <option value="$PROJECT_DIR$/js中的运动/运动框架实例/3.淘宝首页幻灯片.html" />
         <option value="$PROJECT_DIR$/js中的运动/运动框架实例/4.带运动的返回顶部.html" />
+        <option value="$PROJECT_DIR$/js中的运动/运动框架实例/5.图片的按需加载.html" />
+        <option value="$PROJECT_DIR$/js中的运动/运动框架实例/5.图片的预先加载.html" />
+        <option value="$PROJECT_DIR$/js中的运动/运动框架实例/7.按需加载.html" />
+        <option value="$PROJECT_DIR$/DOM/5.父节点.html" />
+        <option value="$PROJECT_DIR$/DOM/6.offsetParent.html" />
       </list>
     </option>
   </component>
@@ -201,7 +205,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="34" />
+    <option name="x" value="-1464" />
+    <option name="y" value="252" />
     <option name="width" value="1280" />
     <option name="height" value="707" />
   </component>
@@ -257,20 +262,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="你真的了解js吗" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="H5Note" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="H5Note" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="事件" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -285,25 +276,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js中的运动" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="H5Note" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="H5Note" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js中的运动" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="运动框架实例" />
+              <option name="myItemId" value="DOM" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -379,7 +352,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="34" width="1280" height="707" extended-state="0" />
+    <frame x="-1464" y="252" width="1280" height="707" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -419,40 +392,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/JavaScript面向对象/类试继承.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript面向对象/面向对象拖拽.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="77" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="96" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript面向对象/9对象的复制.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="32" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript面向对象/面向对象选项卡自动播放.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30726257">
-          <caret line="69" column="25" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JavaScript面向对象/面向对象选项卡1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.38547486">
@@ -628,22 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DOM/childNodes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.5">
-          <caret line="20" column="2" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DOM/3.firstChild,lastChild,nextSibling,previsousSibling.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.25">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/你真的了解js吗/break跳出大循环.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.875">
@@ -744,9 +667,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.083333">
           <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -829,11 +750,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js中的运动/运动框架实例/4.带运动的返回顶部.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5009276">
-          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        <state vertical-scroll-proportion="-5.625">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js中的运动/运动框架实例/5.图片的预先加载.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.3333335">
+          <caret line="58" column="40" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js中的运动/运动框架实例/7.按需加载.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.958333">
+          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DOM/3.firstChild,lastChild,nextSibling,previsousSibling.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.25">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DOM/childNodes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.625">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DOM/5.父节点.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.208333">
+          <caret line="18" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DOM/6.offsetParent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27829313">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
