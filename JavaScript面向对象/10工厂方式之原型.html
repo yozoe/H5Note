@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+
+        //当new去调用一个函数 : 这个时候函数中的this就是创建出来的对象,而且函数的返回值直接就是this啦(隐式反返回)
+        //new 后面的调用的函数就叫构造函数
+        function CreatePerson(name) {
+            //this就是对象了
+            this.name = name;
+        }
+
+        CreatePerson.prototype.showName = function() {
+
+            console.log(this.name);
+        };
+
+
+        var p1 = new CreatePerson('小明');
+        var p2 = new CreatePerson('小强');
+
+        p1.showName();
+        p2.showName();
+
+        //用了原型所以就相同了
+        console.log(p1.showName == p2.showName);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

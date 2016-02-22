@@ -4,11 +4,30 @@
     <meta charset="UTF-8">
     <title></title>
     <script>
-        function hehe() {
-            a = 13;
+//        function hehe() {
+//            a = 13;
+//        }
+//        hehe();
+//        console.log(a);
+
+
+        function hehe(name) {
+            this.name = name;
         }
-        hehe();
-        console.log(a);
+
+        var h1 = new hehe('wd');
+
+        console.log(hehe.prototype);
+
+        console.log(hehe.constructor);
+
+
+        console.log(h1.prototype);
+
+        console.log(h1.constructor);
+
+
+
     </script>
 </head>
 <body>

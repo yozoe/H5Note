@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        /*
+        原型:css中的class
+        普通方法:css中的style(优先级高, 无法复用)
+        原型:prototype:要写在构造函数的下面
+         */
+
+        var arr = [1,2,3,4,5];
+        var arr2 = [2,2,2,2,2];
+
+        arr.sum = function() {
+
+            var result = 0;
+
+            for (var i = 0; i < this.length; i++) {
+                result += this[i];
+            }
+
+            return result;
+
+        };
+
+        console.log(arr.sum());
+
+        //arr2没有sum方法, 这就是普通方法的问题
+//        console.log(arr2.sum());
+
+        var arr = [1,2,3,4,5];
+
+        Array.prototype.sum = function () {
+            var result = 0;
+
+            for (var i = 0; i < this.length; i++) {
+                result += this[i];
+            }
+
+            return result;
+        };
+
+        var arr2 = [2,2,2,2,2];
+
+
+        console.log(arr2.sum());
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
