@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #div1 {
+            background: #ccc;
+            position: absolute;
+            width: 200px;
+            height: 400px;
+            left: 33px;
+            top: 35px;
+            padding: 66px;
+            margin: 11px;
+            border: #eeeeee solid 30px;
+            font-size: 40px;
+            overflow: auto;
+            word-break:keep-all;
+            white-space:nowrap;
+        }
+        #div2 {
+            background: #ccc;
+            position: absolute;
+            width: 200px;
+            height: 400px;
+            left: 500px;
+            top: 35px;
+            padding: 66px;
+            margin: 11px;
+            border: #eeeeee solid 30px;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            //clientWith=width + padding
+            var div1 = document.getElementById('div1');
+            var div2 = document.getElementById('div2');
+
+            var btn = document.getElementById('btn1');
+            btn.onclick = function() {
+                hehe();
+            }
+
+
+            function hehe() {
+                div1.innerHTML = "clientWidth =" + div1.clientWidth + "<br />"
+                        +"clientHeight=" + div1.clientHeight + "<br />"
+                        +"clientTop =" + div1.clientTop + "<br />"
+                        +"clientLeft =" + div1.clientLeft + "<br />"
+                        +"offsetWidth =" + div1.offsetWidth + "<br />"
+                        +"offsetHeight =" + div1.offsetHeight + "<br />"
+                        +"offsetTop =" + div1.offsetTop + "<br />"
+                        +"offsetLeft =" + div1.offsetLeft + "<br />"
+                        +"offsetParent =" + div1.offsetParent + "<br />"
+                        +"scrollWidth =" + div1.scrollWidth + "<br />"
+                        +"scrollHeight =" + div1.scrollHeight + "<br />"
+                        +"scrollTop =" + div1.scrollTop + "<br />"
+                        +"scrollLeft =" + div1.scrollLeft + "<br />";
+                div2.innerHTML = "clientWidth =" + div2.clientWidth + "<br />"
+                        +"clientHeight=" + div2.clientHeight + "<br />"
+                        +"clientTop =" + div2.clientTop + "<br />"
+                        +"clientLeft =" + div2.clientLeft + "<br />"
+                        +"offsetWidth =" + div2.offsetWidth + "<br />"
+                        +"offsetHeight =" + div2.offsetHeight + "<br />"
+                        +"offsetTop =" + div2.offsetTop + "<br />"
+                        +"offsetLeft =" + div2.offsetLeft + "<br />"
+                        +"offsetParent =" + div2.offsetParent + "<br />"
+                        +"scrollWidth =" + div2.scrollWidth + "<br />"
+                        +"scrollHeight =" + div2.scrollHeight + "<br />"
+                        +"scrollTop =" + div2.scrollTop + "<br />"
+                        +"scrollLeft =" + div2.scrollLeft + "<br />";
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="div1"></div>
+<div id="div2"></div>
+<div style="float: right;">
+    width: 200px;
+    height: 400px;
+    left: 33px;
+    top: 35px;
+    padding: 66px;
+    margin: 11px;
+    border: #eeeeee solid 30px;
+</div>
+<input type="button" value="测算" id="btn1" />
+</body>
+</html>

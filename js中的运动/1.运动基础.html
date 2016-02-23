@@ -29,10 +29,11 @@
 
                 clearInterval(iTimer);
 
-                iTimer = setInterval(function(){
+                iTimer = setInterval(function()
                     if (oDiv.offsetLeft == 500) {
                         clearInterval(iTimer);
                     } else {
+                        //10是速度
                         oDiv.style.left = oDiv.offsetLeft + 10 + 'px';
                     }
                 }, 30);
