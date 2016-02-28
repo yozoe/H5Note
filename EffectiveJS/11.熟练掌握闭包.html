@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        //第一个事实:JavaScript允许你引用在当前函数以外定义的变量.
+        function makeSandwich() {
+            var magicIngredient = 'peanut butter';
+            function make(filling) {
+                return magicIngredient + " and " + filling;
+            }
+            return make('jelly');
+        }
+        console.log(makeSandwich());
+
+        //第二个事实:即使外部函数已经返回,当前函数仍然可以引用在外部函数所定义的变量.
+        function makeSandwich1() {
+            var magicIngredient = 'peanut butter';
+            function make(filling) {
+                return magicIngredient + " and " + filling;
+            }
+            return make;
+        }
+        var f = makeSandwich1();
+        console.log(f('jelly'));
+        console.log(f('bananas'));
+        console.log(f('marshmallows'));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

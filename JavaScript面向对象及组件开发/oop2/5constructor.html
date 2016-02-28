@@ -10,12 +10,34 @@
         }
 
 //        App.prototype.constructor = Aaa;  这是程序自带的,每一个函数都有
+        //所以对象就可以找到
 
         var a1 = new Aaa();
+        alert(a1.constructor);
         alert(a1.constructor == Aaa);
 
+        alert(a1.hasOwnProperty == Object.prototype.hasOwnProperty);
+
         var arr = [];
+        alert(arr.constructor);
         alert(arr.constructor == Array);
+
+        Aaa.prototype.name = '小明';
+        Aaa.prototype.age = 20;
+
+        //覆盖了constructor!!!!!!!!!
+        Aaa.prototype = {
+            constructor:Aaa,//手动修正
+            name:'小明',
+            age:20
+        };
+
+        //系统自带的for in找不到
+        //包括手写的constructor
+        for (var attr in Aaa.prototype) {
+            alert(attr);
+        }
+
     </script>
 </head>
 <body>

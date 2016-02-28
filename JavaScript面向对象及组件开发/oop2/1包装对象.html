@@ -9,11 +9,28 @@
         }
 
         Aaa.prototype.showName = function() {
-            alert(this.name);
+            console.log(this.name);
         }
 
         var a1 = new Aaa();
         a1.showName();
+
+        //在js源码:系统对象也是基于原型的程序
+        //js就是基于原型的程序
+
+
+        var arr = [1,2,3];
+        Array.prototype.push = function() {
+//            this:1,2,3
+//            arguments:4,5,6
+            for (var i = 0; i < arguments.length; i++) {
+                this[this.length] = arguments[i];
+            }
+            return this.length;
+        };
+        arr.push(4,5,6);
+
+        alert(arr);
 
     </script>
 </head>

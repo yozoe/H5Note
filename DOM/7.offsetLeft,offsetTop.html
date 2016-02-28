@@ -28,23 +28,22 @@
         window.onload = function() {
 
             var oDiv3 = document.getElementById('div3');
-//            alert(oDiv3.parentNode.id);
 
             /*
-                元素.offsetParent : 只读 属性 离当前元素最近的一个有定位父节点
-                如果没有定位父级,默认是body
-                ie7以下,如果当前元素没有定位默认是body,如果有定位则是html
-                ie7以下,如果当前元素的某个父级触发了layout,那么offsetParent就会被指向到触发了layout特性的父节点
+                offsetLeft[Top] : 只读 属性 当前元素到定位父级的距离(偏移值)
+                到当前元素的offsetParent的距离
+
+                如果没有定位父级
+                    offsetParent -> body / ie7 -> html
+                    offsetLeft -> html
+
+                如果有定位父级
+                    ie7:如果自己没有定位,那么offsetLeft[top]是到body的距离
+                        如果自己有定位,那么就是到定位父级的距离
+                    其他:到定位父级的距离
              */
 
-            //layout
-
-
-            //ie特有
-            alert(oDiv2.currentStyle.hasLayout);
-
-//            alert(oDiv3.offsetParent.id);
-
+            alert(oDiv3.offsetLeft);
         }
     </script>
 </head>
@@ -52,7 +51,6 @@
 <div id="div1">
     <div id="div2">
         <div id="div3"></div>
-
     </div>
 </div>
 </body>

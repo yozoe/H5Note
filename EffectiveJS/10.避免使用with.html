@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function f(x, y) {
+            with (Math) {
+                return min(round(x), sqrt(y));
+            }
+        }
+
+        console.log(f(2,9));
+
+        Math.x = 0;
+        Math.y = 0;
+
+        console.log(f(2,9));
+
+        //在with代码块的内部,变量查找从搜索给定的变量名的属性开始.如果在这个对象中没有找到该属性,则继续在外部作用域中搜索.
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

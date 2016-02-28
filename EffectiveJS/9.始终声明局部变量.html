@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function swap(a, i, j) {
+            temp = a[i];//意外的声明了一个全局变量
+            a[i] = a[j];
+            a[j] = temp;
+        }
+        //始终使用var声明新的局部变量
+        //考虑使用lint工具帮助检查未绑定的变量
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -19,19 +19,21 @@
 
         //子类
         function Bbb() {
-            Aaa.call(this);
+            Aaa.call(this);//4.
         }
 
-        var F = function(){};
-        F.prototype = new F();
+        var F = function(){};//3.避免属性继承,只继承方法
+        F.prototype = Aaa.prototype;
         Bbb.prototype = new F();
 
         //就这一句话,  其实有好多问题, 类式继承要有4句话
-        Bbb.prototype = new Aaa();
+//        Bbb.prototype = new Aaa();//1.原型引用
 
-        Bbb.prototype.constructor = Bbb; //修正指向问题
+        Bbb.prototype.constructor = Bbb; //2.修正指向问题
         alert(Bbb.prototype.constructor);
         var b1 = new Bbb();
+
+        var b2 = new Bbb(); //b2会受影响, 因为b1, b2的的原型都是Aaa的原型, Aaa有个name属性.
 
     </script>
 </head>

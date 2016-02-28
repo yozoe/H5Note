@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var i;
+
+        function test1() {
+            i = 1;
+            test2();
+            console.log(i);//i被test2()改成2了
+        }
+
+        var i;
+
+        function test2() {
+            i = 2;
+            console.log(i);
+        }
+
+
+        test1();
+
+        this.foo = 'hehe';
+
+        console.log(foo);
+
+        var foo = 'haha';
+
+        this.foo = '还是hehe';
+
+        console.log(foo);
+
+        if (!this.JSON) {
+            console.log('没有全局JSON');
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
