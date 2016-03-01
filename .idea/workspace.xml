@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b52d46ff-da3a-448b-899a-d2e9ae846d8a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EffectiveJS/12.理解变量声明提升.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EffectiveJS/13.使用立即调用的函数表达式创建局部作用域.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EffectiveJS/14.当心命名函数表达式笨拙的作用域.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EffectiveJS/18.理解函数调用,方法调用及构造函数调用之间的不同.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EffectiveJS/19.熟练掌握高阶函数.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/词法作用域.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EffectiveJS/11.熟练掌握闭包.html" afterPath="$PROJECT_DIR$/EffectiveJS/11.熟练掌握闭包.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EffectiveJS/20.使用call方法自定义接受者来调用方法.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EffectiveJS/21.使用apply方法通过不同数量的参数调用函数.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EffectiveJS/22.使用arguments创建可变参数的函数.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EffectiveJS/19.熟练掌握高阶函数.html" afterPath="$PROJECT_DIR$/EffectiveJS/19.熟练掌握高阶函数.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="H5Note.iws" />
@@ -30,26 +27,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="3.表格的操作.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DOM/DOM2/3.表格的操作.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.375">
-              <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="5.表单.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DOM/DOM2/5.表单.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-28.375">
-              <caret line="78" column="49" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="11.熟练掌握闭包.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EffectiveJS/11.熟练掌握闭包.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -80,11 +57,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="19.熟练掌握高阶函数.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="19.熟练掌握高阶函数.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EffectiveJS/19.熟练掌握高阶函数.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5884146">
-              <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+            <state vertical-scroll-proportion="-23.25">
+              <caret line="78" column="31" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20.使用call方法自定义接受者来调用方法.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EffectiveJS/20.使用call方法自定义接受者来调用方法.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-23.25">
+              <caret line="59" column="10" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="21.使用apply方法通过不同数量的参数调用函数.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EffectiveJS/21.使用apply方法通过不同数量的参数调用函数.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.375">
+              <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="22.使用arguments创建可变参数的函数.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EffectiveJS/22.使用arguments创建可变参数的函数.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5656109">
+              <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -120,16 +127,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="4.表格数据操作.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DOM/DOM2/4.表格数据操作.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.375">
-              <caret line="26" column="55" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -146,9 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js中的运动/运动框架实例/5.图片的预先加载.html" />
-        <option value="$PROJECT_DIR$/js中的运动/运动框架实例/7.按需加载.html" />
-        <option value="$PROJECT_DIR$/DOM/5.父节点.html" />
         <option value="$PROJECT_DIR$/JavaScript权威指南/6.对象/6.1通过原型继承创建一个新对象.html" />
         <option value="$PROJECT_DIR$/JavaScript权威指南/9.类和模块/9.2使用构造函数来定义范围类.html" />
         <option value="$PROJECT_DIR$/jstest/test.html" />
@@ -197,6 +191,9 @@
         <option value="$PROJECT_DIR$/test/词法作用域.html" />
         <option value="$PROJECT_DIR$/EffectiveJS/18.理解函数调用,方法调用及构造函数调用之间的不同.html" />
         <option value="$PROJECT_DIR$/EffectiveJS/19.熟练掌握高阶函数.html" />
+        <option value="$PROJECT_DIR$/EffectiveJS/20.使用call方法自定义接受者来调用方法.html" />
+        <option value="$PROJECT_DIR$/EffectiveJS/21.使用apply方法通过不同数量的参数调用函数.html" />
+        <option value="$PROJECT_DIR$/EffectiveJS/22.使用arguments创建可变参数的函数.html" />
       </list>
     </option>
   </component>
@@ -208,10 +205,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1577" />
-    <option name="y" value="453" />
-    <option name="width" value="1549" />
-    <option name="height" value="498" />
+    <option name="x" value="-1340" />
+    <option name="y" value="91" />
+    <option name="width" value="1313" />
+    <option name="height" value="833" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -412,14 +409,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1577" y="453" width="1549" height="498" extended-state="6" />
+    <frame x="-1340" y="91" width="1313" height="833" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14397906" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17027864" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -452,27 +449,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js中的运动/7.多物体的运动.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="15.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js中的运动/9.多值同时运动.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="15.625">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js中的运动/11.摩擦运动.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.375">
-          <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js中的运动/1.运动基础.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.666667">
@@ -823,8 +799,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EffectiveJS/19.熟练掌握高阶函数.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5884146">
-          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+        <state vertical-scroll-proportion="-23.25">
+          <caret line="78" column="31" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EffectiveJS/20.使用call方法自定义接受者来调用方法.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.25">
+          <caret line="59" column="10" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EffectiveJS/21.使用apply方法通过不同数量的参数调用函数.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.375">
+          <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EffectiveJS/22.使用arguments创建可变参数的函数.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5656109">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
           <folding />
         </state>
       </provider>

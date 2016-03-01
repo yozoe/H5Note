@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var buffer = {
+            state: [],
+            append: function() {
+                for (var i = 0, n = arguments.length; i < n; i++) {
+                    this.state.push(arguments[i]);
+                }
+            }
+        };
+        buffer.append('Hello, ');
+        buffer.append("dong", " ", "wang", "!");
+        buffer.append("\n");
+        console.log(buffer.state);
+
+
+        //使用apply方法指定一个可计算的参数数组来调用可变参数的函数
+        //使用apply方法的第一个参数给可变参数的方法提供一个接收者
+
+        buffer.append.apply(buffer, ["1", "2", "3"]);
+        console.log(buffer.state);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

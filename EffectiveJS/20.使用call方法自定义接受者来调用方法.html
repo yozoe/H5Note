@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function Hehe() {
+            this.name = 'hehe';
+        }
+
+        var hehe = new Hehe();
+
+        var hasOwnProperty = {}.hasOwnProperty;
+
+        console.log(hehe.hasOwnProperty('name'));
+
+        delete hehe.hasOwnProperty;
+
+        console.log(hasOwnProperty.call(hehe, 'name'));
+        console.log(hasOwnProperty.call(hehe, 'hasOwnProperty'));
+
+
+        var table = {
+            entries: [],
+            addEntry: function(key, value) {
+                this.entries.push({key: key, value: value});
+            },
+            forEach: function(f, thisArg) {
+                var entries = this.entries;
+                for (var i = 0, n = entries.length; i < n; i++) {
+                    var entry = entries[i];
+                    f.call(thisArg, entry.key, entry.value, i);
+                }
+            }
+        };
+
+        var table1 = {
+            entries: [],
+            addEntry: function(key, value) {
+                this.entries.push({key: key, value: value});
+            },
+            forEach: function(f, thisArg) {
+                var entries = this.entries;
+                for (var i = 0, n = entries.length; i < n; i++) {
+                    var entry = entries[i];
+                    f.call(thisArg, entry.key, entry.value, i);
+                }
+            }
+        };
+
+        table.addEntry('name', 'wd');
+        table.addEntry('age', 18);
+
+        console.log(table.entries);
+
+        table.forEach(table1.addEntry, table1);
+
+        console.log(table1.entries);
+
+        /*
+        使用call方法自定义接收者来调用函数
+        使用call方法可以调用在给定的对象中不存在的方法
+        使用call方法定义高阶函数允许使用者给回调函数指定接收者
+         */
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

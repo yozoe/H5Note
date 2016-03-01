@@ -14,11 +14,11 @@
             return 0;
         }
 
-        var arr = [3, 1, ,4, 1, 5, 9];
-
-        arr.sort(compareNumbers);
+        var arr = [3, 1, 4, 1, 5, 9];
 
         console.log(arr);
+
+        arr.sort(compareNumbers);
 
         var aIndex = 'a'.charCodeAt(0);
 
@@ -29,6 +29,54 @@
         }
 
         console.log(alphabet);
+
+        alphabet = arr.sort(function(x, y) {
+            if (x < y) {
+                return -1;
+            }
+            if (x > y) {
+                return 1;
+            }
+            return 0;
+        });
+
+        console.log(alphabet);
+
+        var names = ["wang", "dong"];
+        var upper = [];
+        for (var i = 0, n = names.length; i < n; i++) {
+            upper[i] = names[i].toUpperCase();
+        }
+        console.log(upper);
+
+        //ES5 map改进
+
+        upper = names.map(function(name) {
+            return name.toUpperCase();
+        });
+
+        console.log(upper);
+
+        //改进版
+        function buildString(n, callback) {
+            var result = '';
+            for (var i = 0; i < n; i++) {
+                result += callback(i);
+            }
+            return result;
+        }
+
+        var result1 = buildString(26, function(i) {
+            return String.fromCharCode(aIndex + i);
+        });
+        console.log(result1);
+
+        var result2 = buildString(10, function(i) {
+            return i;
+        });
+        console.log(result2);
+
+        //高阶函数是那些将函数作为参数或返回值的函数
 
     </script>
 </head>

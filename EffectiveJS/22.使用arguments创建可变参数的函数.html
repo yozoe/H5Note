@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function averageOfArray(a) {
+            for (var i = 0, sum = 0, n = a.length; i < n; i++) {
+                sum += a[i];
+            }
+            return sum / n;
+        }
+
+        console.log(averageOfArray([2, 7, 1, 8, 2, 8, 1, 8]));
+
+        function average() {
+            for (var i = 0, sum = 0, n = arguments.length; i < n; i++) {
+                sum += arguments[i];
+            }
+            return sum / n;
+        }
+
+        function average1() {
+            return averageOfArray(arguments);
+        }
+ 
+        //使用隐式的arguments对象实现可变参数的函数
+        //考虑对可变参数的函数提供一个额外的固定元素的版本,从而使使用者无需借助apply方法.
+        //apply方法会降低可读性而且经常导致性能损失.
+    </script>
+</head>
+<body>
+
+</body>
+</html>
