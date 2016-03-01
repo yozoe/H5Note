@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function wrapElements(a) {
+            var result = [], i, n;
+            for (i = 0, n = a.length; i < n; i++) {
+                result[i] = function() { return a[i]; };
+            }
+            return result;
+        }
+
+        var wrapped = wrapElements([10, 20, 30, 40, 50]);
+        var f = wrapped[0];
+        console.log(f());//10 or undefined
+
+        function wrapElements1(a) {
+            var result = [], i, n;
+            for (i = 0, n = a.length; i < n; i++) {
+
+                (function(){
+                    var j = i;
+                    result[i] = function() { return a[j]; };
+                })();
+
+            }
+            return result;
+        }
+
+        var wrapped1 = wrapElements1([10, 20, 30, 40, 50]);
+        var f1 = wrapped1[0];
+        console.log(f1());//10 or undefined
+
+        function wrapElements2(a) {
+            var result = [], i, n;
+            for (i = 0, n = a.length; i < n; i++) {
+
+                (function(j){
+                    result[i] = function() { return a[j]; };
+                })(i);
+
+            }
+            return result;
+        }
+
+        var wrapped2 = wrapElements2([10, 20, 30, 40, 50]);
+        var f2 = wrapped2[0];
+        console.log(f2());//10 or undefined
+
+        /*
+        闭包通过引用而不是值捕获他们的外部变量
+        使用立即调用的函数表达式来创建局部作用域
+         */
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

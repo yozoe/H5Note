@@ -26,6 +26,42 @@
         console.log(f('jelly'));
         console.log(f('bananas'));
         console.log(f('marshmallows'));
+
+        //那些在其所涵盖的作用域内部跟踪变量的函数被称为闭包.
+
+        //函数可以引用在其作用域内的任何变量,包括参数和外部函数变量
+        function sandwichMaker(magicIngredient) {
+            function make(filling) {
+                return magicIngredient + " and " + filling;
+            }
+            return make;
+        }
+
+        var hamAnd = sandwichMaker('ham');
+        hamAnd('cheese');
+        hamAnd('mustard');
+
+        function sandwichMaker1() {
+            return function(filling) {
+                return magicIngredient + " and " + filling;
+            }
+        }
+
+        //学习闭包的第三个也是最后一个事实:闭包可以更新外部变量的值.
+
+        function box() {
+            var val = undefined;
+            return {
+                set: function(newVal) { val = newVal},
+                get: function() { return val;},
+                type: function() { return typeof val; }
+            }
+        }
+        var b = box();
+        b.type();
+        b.set(98.6);
+        b.get();
+        b.type;
     </script>
 </head>
 <body>

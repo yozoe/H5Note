@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var x = 'global';
+
+        var getValue = function() {
+            alert(x);
+
+            var x = 'local';//这句没加弹出global, 加上是undefined
+
+            alert(x);
+        }
+
+        getValue();
+
+
+        var getValue1 = function() {
+            var y = x;
+            alert(y);
+            y = 'local';
+            alert(y);
+        }
+
+        getValue1();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

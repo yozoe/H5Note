@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function isWinner(player, others) {
+            var highest = 0;
+            for (var i = 0, n = others.length; i < n; i++) {
+                var player = others[i];
+                if (player.score > highest) {
+                    highest = player.score;
+                }
+            }
+            return player.score > highest;
+        }
+
+        //js中变量是函数级作用域,而不是块级作用域
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

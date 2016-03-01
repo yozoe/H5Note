@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function hello(username) {
+            return 'hello, ' + username;
+        }
+        console.log(hello('dong wang'));
+
+        var obj = {
+            hello: function () {
+                return 'hello, ' + this.username;
+            },
+            username: "wang dong"
+        };
+
+        console.log(obj.hello());
+
+        var obj2 = {
+            hello: obj.hello,
+            username: 'dong dong'
+        };
+        console.log(obj2.hello());
+
+        function hello() {
+            return 'hello, ' + this.username;
+        }
+
+        var obj1 = {
+            hello: hello,
+            username: 'wang wang'
+        };
+
+        console.log(obj1.hello());
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
