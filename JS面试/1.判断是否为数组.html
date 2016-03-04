@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function isArray(arr) {
+             if (typeof Array.isArray === 'undefined') {
+                 return Object.prototype.toString.call(arr) == '[object Array]';
+             } else {
+                 return Array.isArray(arr);
+             }
+        }
+
+        var arr = [];
+
+        console.log(isArray(arr));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

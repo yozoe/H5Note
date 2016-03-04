@@ -12,6 +12,9 @@
 
 
         function hehe(name) {
+            for (var attr in arguments) {
+                alert(attr);
+            }
             this.name = name;
         }
 

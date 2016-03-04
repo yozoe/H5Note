@@ -10,6 +10,7 @@
             background: red;
             float: right;
         }
+
         #div2 {
             width: 50px;
             height: 50px;
@@ -21,17 +22,27 @@
     </style>
 
     <script>
-        function add(a,b)
-        {
-            alert(a+b);
+        function add(a, b) {
+            alert(a + b);
         }
 
-        function sub(a,b)
-        {
-            alert(a-b);
+        function sub(a, b) {
+            alert(a - b);
         }
 
-        add.call(sub,3,1);
+        //        add.call(sub,3,1);
+
+        //        console.log([] == []);
+        //        console.log(1 + "22");
+        //        console.log(Math.random() * -100);
+
+        for (var i = 1; i <= 3; i++) {
+            setTimeout(function () {
+                console.log(i);
+            }, 0);
+        }
+
+
     </script>
 </head>
 <body>

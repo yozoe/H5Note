@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        window.onload = function() {
+            var list = document.getElementsByTagName('input');
+            var checkbox = [];
+            var length = list.length;
+
+            while (length--) {
+                if (list[length].type === 'checkbox') {
+                    checkbox.push(list[length]);
+                }
+            }
+
+            console.log(checkbox);
+        }
+    </script>
+</head>
+<body>
+<input type="button" />
+<input type="checkbox" />
+<input type="checkbox" />
+<input type="checkbox" />
+</body>
+</html>
