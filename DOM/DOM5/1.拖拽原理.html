@@ -10,36 +10,60 @@
             background: red;
             position: absolute;
         }
+
+        #div2 {
+            width: 100px;
+            height: 100px;
+            background: green;
+            position: absolute;
+            left: 400px;
+            top: 200px;
+        }
     </style>
     <script>
+        window.onload = function () {
+            /*
+             onmousedown : 选择元素
+             onmousemove : 移动元素
+             onmouseup   : 释放元素
+             */
 
-        window.onload = function() {
             var oDiv = document.getElementById('div1');
-
             oDiv.onmousedown = function (ev) {
+
+                var ev = ev || event;
+
                 var disX = ev.clientX - this.offsetLeft;
                 var disY = ev.clientY - this.offsetTop;
 
-                document.onmousemove = function(ev) {
+                document.onmousemove = function (ev) {
+
+                    var ev = ev || event;
 
                     oDiv.style.left = ev.clientX - disX + 'px';
                     oDiv.style.top = ev.clientY - disY + 'px';
 
                 }
 
-
-                document.onmouseup = function() {
+                document.onmouseup = function () {
 
                     document.onmousemove = null;
                     document.onmouseup = null;
+
                 }
+
+                /*
+                onmousemove onmouseup 改为docment
+                1.防止拖拽速度过快, 超出div范围
+                2.防止绿色div盖在红色div上, up事件失效
+                 */
+
             }
         }
-
     </script>
 </head>
 <body>
 <div id="div1"></div>
-<div style="width: 100px; height: 100px; background: green; position: absolute; left: 400px; top: 200px;"></div>
+<div id="div2"></div>
 </body>
 </html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+
+
+        function Aaa() {
+            this.name = [];
+        }
+
+        Aaa.prototype.show = function() {
+            console.log("the show");
+        }
+
+        function Bbb() {
+            Aaa.call(this);
+        }
+
+        Bbb.prototype = Aaa.prototype;
+//        Bbb.prototype = new Aaa();
+
+        var b1 = new Bbb();
+        var b2 = new Bbb();
+//
+//
+        b1.name.push(45);
+//        b1.name = '呵呵';
+        console.log(b1.name);
+        console.log(b2.name);
+        b2.show();
+
+    </script>
+</head>
+<body>
+<div id="div1"></div>
+</body>
+</html>
