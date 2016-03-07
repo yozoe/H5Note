@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function Animal() {
+        }
+
+        Animal.prototype.species = '动物';
+
+        Animal.prototype.eat = function() {
+            console.log('eat');
+        }
+
+        function Cat(name, color) {
+            this.name = name;
+            this.color = color;
+        }
+
+        //问题1:cat引用animal的prototype,会导致修改cat的prototype同时也影响animal的prototype
+        Cat.prototype = Animal.prototype;
+
+        //同时修改了animal的prototype
+        Cat.prototype.constructor = Cat;
+
+        var cat1 = new Cat('大毛', '黄色');
+        console.log(cat1.species);
+        cat1.eat();
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

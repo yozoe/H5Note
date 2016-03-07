@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function Animal() {
+            this.species = '动物';
+        }
+
+        Animal.prototype.eat = function() {
+            console.log('eat');
+        }
+
+        function Cat(name, color) {
+            this.name = name;
+            this.color = color;
+        }
+
+        /*
+        型被覆盖,所以constructor也是Animal
+        o.prototype = {};
+        o.prototype.constructor = o;
+         */
+
+        Cat.prototype = new Animal();
+
+        //修正constructor,否则无法从实例找回constructor对应的原型
+        Cat.prototype.constructor = Cat;
+
+        var cat1 = new Cat('大毛', '黄色');
+
+        for (var prop in cat1) {
+            console.log(prop);
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

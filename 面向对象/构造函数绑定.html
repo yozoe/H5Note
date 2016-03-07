@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function Animal() {
+            this.species = '动物';
+        }
+
+        Animal.prototype.eat = function() {
+            console.log('eat');
+        }
+
+        function Cat(name, color) {
+            Animal.apply(this, arguments);
+            this.name = name;
+            this.color = color;
+        }
+
+        var cat1 = new Cat('大毛', '黄色');
+
+        for (var prop in cat1) {
+            console.log(prop);
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function Animal () {
+
+        }
+
+        Animal.prototype.species = '动物';
+
+        function extend(child, Parent) {
+            var c = child.prototype;
+            var p = child.prototype;
+            for (var i in p) {
+                c[i] = p[i];
+            }
+            c.uber = p;
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

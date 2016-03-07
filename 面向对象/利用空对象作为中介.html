@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function Animal() {
+            this.species = '动物';
+        }
+
+        Animal.prototype.eat = function() {
+            console.log('eat');
+        }
+
+        function Cat(name, color) {
+            this.name = name;
+            this.color = color;
+
+            //继承属性
+            Animal.apply(this, arguments);
+        }
+
+        var F = function () {};
+
+        //这种方式无法继承animal的species属性
+        F.prototype = Animal.prototype;
+
+        Cat.prototype = new F();
+
+        Cat.prototype.constructor = Cat;
+
+        console.log("-->" + F.prototype.constructor);
+        console.log("==>" + Cat.prototype.constructor);
+
+        var cat1 = new Cat('大毛', '黄色');
+        console.log(cat1.species);
+        cat1.eat();
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
