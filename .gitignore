@@ -1,0 +1,5 @@
+# ide setting
+.idea/
+
+# Mac OS file
+*.DS_Store
