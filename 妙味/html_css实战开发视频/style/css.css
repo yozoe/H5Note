@@ -1,0 +1,47 @@
+body,ul,ol,p,h1,h2,h3,h4,h5 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+li {
+    list-style: none;
+}
+
+/* a链接防止蓝色边框 */
+img {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background: #ffffff url(../image/body_bg.png) repeat-x;
+}
+
+#top {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.top_menu {}
+.top_menu li {
+    float: left;
+    background: url("../image/top_ico.png") no-repeat right 14px;
+}
+.top_menu a {}
+.top_menu a:hover {}
+.top_menu .no_dot {}
+
+.top_bar {
+    float: right;
+}
+.top_bar li {}
+.top_bar .phone {}
+.top_bar .help {}
