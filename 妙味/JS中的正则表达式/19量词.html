@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        /*
+        量词 : {}
+        {4,7}  :   最少出现4次,最多出现7次
+        {4,}   :   最少出现4次
+        {4}    :   正好出现4次
+        + : {1,}  : \d{1,}
+        ? : {0,1} : 出现0次或者1次
+        * : (0,)  : 至少出现0次
+         */
+
+//        var str = 'ab';
+        var str = 'ac';
+//        var re = /ab+/;
+        var re = /ab*/;
+
+        console.log(re.test(str));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        window.onload = function() {
+
+            /*
+            非称仁爱礁附近17艘中国船均在非军监视之下
+             |:或的意思
+             replace:第二个参数,可以是字符串,也可以是一个回调函数
+             */
+
+            var aT = document.getElementsByTagName('textarea');
+            var oInput = document.getElementById('input1');
+            var re = /非称|中国船|监视之下/g;
+
+            oInput.onclick = function() {
+//                aT[1].value = aT[0].value.replace(re, '*');
+                aT[1].value = aT[0].value.replace(re, function(str){
+                    //函数的第一个参数:就是匹配成功的字符
+                    var result = '';
+                    for (var i = 0; i < str.length; i++) {
+                        result += "*";
+                    }
+                    return result;
+                });
+            };
+        }
+
+    </script>
+</head>
+<body>
+替换前<br />
+<textarea>
+
+</textarea>
+替换后<br />
+<textarea>
+
+</textarea>
+<br />
+<input id="input1" type="button" />
+</body>
+</html>

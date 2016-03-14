@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        /*
+        字符类:一组相似的元素 [] 中括号的整体代表一个字符
+         */
+
+//        var str = 'abdc';
+//        var re = /a[bde]c/;
+//
+//        alert(re.test(str));
+
+        //排除 :  ^如果^写在[]里面的话,就代表排除的意思
+//        var str = 'awc';
+//        var re = /a[^bde]c/;
+//
+//        alert(re.test(str));
+
+        //
+        var str = 'abc';
+        var re = /a[a-z0-9A-Z]+c/;
+
+        alert(re.test(str));
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

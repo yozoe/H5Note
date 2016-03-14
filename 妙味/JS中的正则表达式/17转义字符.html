@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        // \1 : 重复的第一个子项
+        // \2 : 重复的第二个子项
+
+//        var str = 'abca';
+//        var re = /(a)(b)(c)\2/;
+//        alert(re.test(str));
+
+        var re = /\w\w/;    //ab cd
+        var re = '(\w)\1';  //c9 flase cc 99 必须完全一样,针对不确定的字符使用
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        window.onload = function() {
+
+            var aT = document.getElementsByTagName('textarea');
+            var oInput = document.getElementById('input1');
+
+//            var er = /<\w+>/g;
+//            var re = /<[^>]+>/g;
+
+            oInput.onclick = function() {
+                aT[1].value = aT[0].value.replace(re, '');
+            };
+        }
+
+    </script>
+</head>
+<body>
+替换前<br />
+<textarea>
+
+</textarea>
+替换后<br />
+<textarea>
+
+</textarea>
+<br />
+<input id="input1" type="button" />
+</body>
+</html>
