@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="sea/sea.js"></script>
+
+    <script>
+        //两个参数 : 第一个参数 : 模块的地址 第二个参数 : 回调函数
+        //sea的默认根目录 : sea.js这个文件
+        seajs.use('./js/module1.js', function(ex) {
+            ex.show();
+        });
+
+        seajs.use('./js/module2.js', function(ex) {
+            ex.show();
+        });
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
