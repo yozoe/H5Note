@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        window.onload = function() {
+
+            var inputs = document.getElementsByTagName("input");
+
+            inputs[1].onclick = function() {
+                inputs[0].value = trim(inputs[0].value);
+            }
+
+            inputs[2].onclick = function() {
+                alert(isContent(inputs[0].value));
+            }
+
+        }
+
+        function trim(str) {
+            var re = /^(\s)+|(\s)+$/g;
+            return str.replace(re, '');
+        }
+
+        function isContent(str) {
+            return !str ? true : false;
+        }
+
+    </script>
+</head>
+<body>
+<input type="text" />
+<input type="button" value="过滤空格" />
+<input type="button" value="是否为空" />
+</body>
+</html>

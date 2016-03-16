@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        window.onload = function() {
+
+            function setCss(_this, cssOption) {
+                if (!_this || _this.nodeType === 3 || _this.nodeType === 8 || !_this.style) {
+                    return;
+                }
+                for (var cs in cssOption) {
+                    _this.style[cs] = cssOption[cs];
+                }
+            }
+
+            function passwordStrength(input, span) {
+
+                input.onkeyup = function() {
+
+                    var _color = ['red', 'yellow', 'orange', 'green'];
+                    var msgs = ['密码太短', '弱', '中', '强'];
+                    var _strength = 0;
+                    var _v = input.value;
+                    var _vL = _v.length;
+                    var i = 0;
+
+                    var charStrength = function(char) {
+                        console.log("尼玛逼");
+                        if (char >= 48 && char <= 57) {
+                            return 1;
+                        }
+                        if (char >= 97 && char <= 122) {
+                            return 2;
+                        } else {
+                            return 3;
+                        }
+                    }
+
+                    if (_vL < 6) {
+                        span.innerHTML = msgs[0];
+                        setCss(span, {color:_color[0]});
+                    } else {
+                        for (; i < _vL; i++) {
+                            _strength += charStrength(_v.toLocaleLowerCase().charCodeAt(i));
+                        }
+                        if (_strength < 10) {
+                            span.innerHTML = msgs[1];
+                            setCss(span, {color:_color[1]});
+                        }
+                        if (_strength >= 10 && _strength <= 15) {
+                            span.innerHTML = msgs[2];
+                            setCss(span, {color:_color[2]});
+                        }
+                        if (_strength >= 15) {
+                            span.innerHTML = msgs[3];
+                            setCss(span, {color:_color[3]});
+                        }
+                    }
+                }
+            }
+
+            passwordStrength(document.getElementById('input'), document.getElementById('span'));
+        }
+
+    </script>
+</head>
+<body>
+<h2>密码强度实时验证</h2>
+<input id="input" data-hint="请输入密码" type="password"><span id="span"></span>
+</body>
+</html>
