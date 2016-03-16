@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        img {
+            position: absolute;
+        }
+    </style>
+    <script src="extend/animateManage.js"></script>
+    <script>
+        window.onload = function () {
+            document.getElementById('image').onclick = function () {
+                new animateManage({
+                    "context" : this,
+                    "effect" : "linear",
+                    "time" : 500,
+                    "starCss" : {
+                        "left" : this.left
+                    },
+                    "css" : {
+                        "left" : 200
+                    },
+                }).init();
+            }
+        }
+
+    </script>
+</head>
+<body>
+<img id="image" src="psu2.jpg" />
+</body>
+</html>
