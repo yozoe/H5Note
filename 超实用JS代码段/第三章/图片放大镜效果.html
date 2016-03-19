@@ -3,10 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <style>
+        .minImages {
+            width: 200px;
+            position: relative;
+        }
+
+        .focusPoint {
+            border: 2px #ccc outset;
+            position: absolute;
+            top: 80px;
+            z-index: 100;
+            filter: alpha(opacity=50);
+            -moz-opacity: 0.5;
+            opacity: 0.5;
+            cursor: move;
+        }
+
+        #imagesSource {
+            width: 200px;
+            height: auto;
+        }
+
+        .magnifier {
+            width: 304px;
+            height: 222px;
+            position: absolute;
+            display: none;
+            top: 300px;
+            overflow: hidden;
+            margin: 0px auto 0px;
+        }
+
+        .maxImage {
+            width: 800px;
+            position: absolute;
+        }
+    </style>
+
+    <script>
+
+
+        //        eMagnifierMages.onmousemove = function (e) {
+        //
+        //        }
+
+        window.onload = function () {
+
+            var focusElement = null;
+            var eMagnifierMages = null;
+            var focusIndex = 100;
+
+            var focusArea = {
+                "width": 50,
+                "height": 50
+            };
+
+            var setCss = function (_this, cssOption) {
+                if (!_this || _this.nodeType === 3 || _this.nodeType === 8 || !_this.style) {
+                    return;
+                }
+
+                for (var cs in cssOption) {
+                    _this.style[cs] = cssOption[cs];
+                }
+                return _this;
+            }
+
+            var initMagnifierMages = function (_e) {
+                focusElement = setCss(document.getElementById('focusPoint'), {
+                    'z-index' : focusIndex,
+                    'width' : focusArea.width,
+                    'height' : focusArea.height
+                });
+            }
+
+            eMagnifierMages = document.getElementById('imagesSource');
+
+            var _mousepos = {
+                "top": 0,
+                "left": 0
+            };
+
+            var getMousePoint = function (_e) {
+                var _body = document.body,
+                        _left = 0,
+                        _top = 0;
+                _left = document.documentElement.scrollLeft || document.body.scrollLeft;
+                _top = document.documentElement.scrollTop || document.body.scrollTop;
+
+                _left += _e.clientX;
+                _top += _e.clientY;
+
+
+                _mousepos.left = _left;
+                _mousepos.top = _top;
+
+                return _mousepos;
+            }
+
+            var pointCheck = function (_event, _e, options) {
+                var _pos = getMousePoint(_event),
+                        _w = options && options.width || _e.offsetWidth,
+                        _h = options && options.height || _e.offsetHeight,
+                        _left = getAbsouleLeft(_e),
+                        _top = getAbsouleTop(_e);
+                _pos.left += options && options.left || 0;
+                if (_pos.left < (_left + _w) && _pos.top < (_top + _h)) {
+                    return true;
+                }
+                return false;
+            }
+
+            var bodyMagnifiermousemove = function (event) {
+                var _event = event || window.event,
+                        _e = eMagnifierMages;
+                if (pointCheck(_event, _e)) {
+                    console.log(1);
+                } else {
+                    console.log(0);
+                }
+            }
+
+            var focusPos = function (_e, _event) {
+                var _pos = getMousePoint(_event),
+                        _top = _pos.top - focusArea.height / 2,
+                        _left = _pos.left - focusArea.width / 2;
+
+            }
+
+            var focusStatus = function () {
+
+            }
+
+            var initMagnifierPos = function (_e) {
+
+            }
+
+            var getAbsouleLeft = function (_e) {
+                var _left = _e.offsetLeft,
+                        _current = _e.offsetParent;
+                while (_current !== null) {
+                    _left += _current.offsetLeft;
+                    _current = _current.offsetParent;
+                }
+                return _left;
+            }
+
+            var getAbsouleTop = function (_e) {
+                var _top = _e.offsetTop,
+                        _current = _e.offsetParent;
+                while (_current !== null) {
+                    _top += _current.offsetTop;
+                    _current = _current.offsetParent;
+                }
+                return _top;
+            }
+
+            document.body.onmousemove = function (e) {
+                bodyMagnifiermousemove(e);
+
+//                getMousePoint(e);
+//                console.log("x = " + _mousepos.left + ' y = ' + _mousepos.top)
+            }
+
+            initMagnifierMages(eMagnifierMages);
+
+        }
+    </script>
 </head>
 <body>
 <div id="imagesSource" data-maxImg="./images/psu2.jpg">
-    <img  class="minImages" src="images/psu2.jpg">
+    <img class="minImages" src="images/psu2.jpg">
+
     <div class="focusPoint" id="focusPoint"></div>
 </div>
 <div class="magnifier" id="magnifier">

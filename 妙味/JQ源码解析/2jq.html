@@ -5,12 +5,16 @@
     <title></title>
     <script>
         //1.查找速度会快
+        //2.压缩的时候有用
+
+        //传undefined, window下的一个属性, 某些浏览器可以修改其值
         (function(window){
 
         })(window);
 
         window.a == undefined
 
+        //这是全兼容的
         typeof window.a == 'undefined';
 
     </script>
