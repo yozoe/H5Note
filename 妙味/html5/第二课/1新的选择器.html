@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload = function () {
+            //只能选择一组中的第一个元素
+            var oDiv = document.querySelector('#div1');
+//            var oDiv = document.querySelector('.box');
+//            var oDiv = document.querySelector('[title=hello]');
+            oDiv.style.background = 'red';
+        }
+    </script>
+</head>
+<body>
+<div id="div1" class="box" title="hello">div</div>
+<div class="box">div2</div>
+</body>
+</html>

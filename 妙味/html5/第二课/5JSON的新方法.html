@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*
+
+        eval:可以解析任何字符串变成JS
+        parse:只能解析JSON形式的字符串变成JS (安全性要高一些)
+
+        var str = 'function show() {alert(123);}';
+        eval(str);
+        show();
+        */
+
+//        var str = 'function show() {alert(123);}';
+//        JSON.parse(str);
+
+        //必须是严格形式,name要加引号
+//        var str = '{"name":"hello"}';
+//        var json = JSON.parse(str);
+//
+//        alert(json.name);
+
+        var json = {name:'hello'};
+
+        var str = JSON.stringify(json);
+
+        alert(str);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

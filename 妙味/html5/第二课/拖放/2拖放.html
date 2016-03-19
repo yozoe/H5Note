@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload = function () {
+            var oUl = document.getElementsByTagName('ul')[0];
+            var aLi = document.getElementsByTagName('li');
+            var oDiv = document.getElementById('div1');
+            var i = 0;
+            for (var i = 0; i < aLi.length; i++) {
+                aLi[i].index = i;
+                aLi[i].ondragstart = function (ev) {
+                    var ev = ev || window.event;
+                    ev.dataTransfer.setData('name', this.index);
+                    this.style.background = 'green';
+                };
+                //开始与结束连续触发
+                aLi[i].ondrag = function () {
+//                    document.title = i++;
+                }
+                aLi[i].ondragend = function () {
+                    this.style.background = 'yellow';
+                }
+            }
+
+            oDiv.ondragenter = function () {
+                this.style.background = 'blue';
+            }
+
+            oDiv.ondragleave = function () {
+                this.style.background = 'red';
+            }
+
+            //enter跟leave之间的连续触发
+            oDiv.ondragover = function (ev) {
+//                document.title = i++;
+                //要想触发drop事件,就必须在dragover当中阻止默认事件
+                ev.preventDefault(); //标准
+//                return false;
+            }
+
+            oDiv.ondrop = function (ev) {
+                var ev = ev || window.event;
+//                alert(ev.dataTransfer.getData('name'));
+                console.log(ev.dataTransfer.getData('name'));
+                oUl.removeChild(aLi[ev.dataTransfer.getData('name')]);
+
+                for (var i = 0; i < aLi.length; i++) {
+                    aLi[i].index = i;
+                }
+            }
+        }
+    </script>
+    <style>
+        li {
+            width: 100px;
+            height: 30px;
+            background: yellow;
+            margin: 10px;
+        }
+
+        #div1 {
+            width:100px;
+            height: 100px;
+            background: red;
+            margin: 200px;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li draggable="true">a</li>
+    <li draggable="true">b</li>
+    <li draggable="true">c</li>
+</ul>
+<div id="div1"></div>
+</body>
+</html>
