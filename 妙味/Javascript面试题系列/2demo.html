@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        /*
+        2.当var不加的时候,会自动生成全局变量(不建议这样写,最好把所有要定义的变量加var)
+         */
+        function aaa () {
+            var a = b = 10;
+        }
+        aaa();
+        alert(a);
+        alert(b);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

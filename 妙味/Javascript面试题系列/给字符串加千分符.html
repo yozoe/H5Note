@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        /*
+        (?=) : 前向声明
+        (?!) : 反前向声明
+         */
+
+//        var str = 'abacad';
+//        var re = /a(?=b)/g;
+//        str = str.replace(re, '*');
+
+        var str = '3562123761';
+        function test (str) {
+            var iNum = str.length % 3;
+            var prev = '';
+            var arr = [];
+            var tmp = '';
+            var iNow = 0;
+            if (iNum != 0) {
+                prev = str.substring(0, iNum);
+                arr.push(prev);
+            }
+            str = str.substring(iNum);
+
+            for (var i = 0; i < str.length; i++) {
+                iNow++;
+                tmp += str[i];
+                if (iNow == 3 && tmp) {
+                    arr.push(tmp);
+                    tmp = ''
+                    iNow = 0;
+                }
+            }
+            return arr.join(',');
+        }
+
+        function test1 () {
+            var re = /(?=(?!\b)(\d{3})+$)/g;
+            return str.replace(re, ',');
+        }
+
+//        alert(test(str));
+        alert(test1(str));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

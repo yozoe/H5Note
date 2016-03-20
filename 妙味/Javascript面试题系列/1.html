@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        //限制条件补全代码:
+        //题目一 : a b两个变量 不用第三个变量来切换两个变量的值
+
+//        var a = 5;
+//        var b = 6;
+//
+//        a = a + b;
+//        b = a - b;
+//        a = a - b;
+//
+//        var a = 'hello';
+//        var b = 'hi';
+//
+//        a = [a, b];
+//        b = a[0];
+//        a = a[1];
+
+        //题目二 : 有一个数n=5, 不用for循环, 怎么返回[1,2,3,4,5]这样一个数组
+
+//        var n = 5;
+
+//        function show (n) {
+//            var arr = [];
+//            return (function () {
+//                arr.unshift(n);
+//                n--;
+//                if (n != 0) {
+//                    arguments.callee();
+//                }
+//               return arr;
+//            })();
+//        }
+
+//        function show (n) {
+//            var arr = [];
+//            arr.length = n + 1;
+//            var str = arr.join('a');
+//
+//            var arr2 = [];
+//
+//            str.replace(/a/g, function() {
+//               arr2.unshift(n--);
+//            });
+//            return arr2;
+//        }
+//
+//        alert(show(n));
+
+        //题目三 : 一个数n, 当n小于100就返回n, 否则就返回100
+
+
+        var n = 50;
+        function show(n) {
+//            if ( n < 100 ) {
+//                return n;
+//            } else {
+//                return 100;
+//            }
+
+//            return n < 100 ? n : 100;
+
+//            switch  (n < 100) {
+//                case true:
+//                    return n;
+//                break;
+//                case false:
+//                    return 100;
+//            }
+
+//            Math.min(n, 100);
+
+//            var arr = [n, 100];
+//            arr.sort(funciton (n1, n2) {
+//                return n1 - n2;
+//            });
+//
+//            return arr[0];
+
+//            var m = '' + n;
+//
+//            for (var i = 2; i < m.length; i++) {
+//                return 100;
+//            }
+//            return n;
+
+//            var json = {name : 'hello'};
+//            var m = n < 100 || json;
+//            for (var attr in m) {
+//                return 100;
+//            }
+
+            var m = n >= 100 && 100;
+            return m = m || n;
+        }
+        alert(show(n));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

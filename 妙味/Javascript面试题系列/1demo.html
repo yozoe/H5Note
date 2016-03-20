@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        /*
+        1.外层的变量,内存可以找到(全局),内层的变量,外层找不到(局部)
+         */
+        var a = 10;
+        function aaa () {
+            alert(a);
+        }
+        function bbb () {
+            var a = 20;
+            aaa();
+        }
+
+        bbb();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

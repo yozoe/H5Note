@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0"/>
+    <style>
+        body {
+            margin: 0;
+        }
+        .box {
+            margin: 0 auto;
+        }
+        @media all and (min-width: 1024px) {
+            .box {
+                width:1024px;
+                height: 400px;
+                background: red;
+            }
+        }
+
+        @media all and (min-width: 1024px) and (max-width: 1200px) {
+            .box {
+                width: 1024px;
+                height: 400px;
+                background: blue;
+            }
+        }
+
+        @media all and (min-width:400px) and (max-width:1023px) {
+            .box {
+                width: 400px;
+                height: 300px;
+                background: yellow;
+            }
+        }
+
+        @media all and (min-width:220px) and (max-width:399px) {
+            .box {
+                width: 220px;
+                height: 300px;
+                background: pink;
+            }
+        }
+
+        @media all and (max-width:219px) {
+            .box {
+                width: 220px;
+                height: 300px;
+                background: black;
+            }
+        }
+
+
+        /*
+            pc ipad 手机400 220-399 219
+            min-width:1200px 分辨率 最小在1200之上 包括1200
+            max-width:1024px 分辨率在1024以下 包括1024
+        */
+
+    </style>
+</head>
+<body>
+<div class="box"></div>
+<script>
+</script>
+</body>
+</html>

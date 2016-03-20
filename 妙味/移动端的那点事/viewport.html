@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!--
+    width直接去设置具体数值大部分的安卓手机不支持 但ios支持
+    user-scalable 允许缩放
+    initial-scale 初始比例
+    minimum-scale 允许最小缩放比例
+    maxinum-scale 允许最大缩放比例
+    target-densitydpi
+    -- dpi_value 70-400 //每英寸像素点的个数
+    -- device-dpi 设备默认像素密度
+    -- high-dpi 高像素密度
+    -- medium-dpi 中等像素密度
+    -- low-dpi 低像素密度
+    -- webkit内核已不准备再支持
+    -->
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0"/>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+<script>
+    alert(document.documentElement.clientWidth);
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        /*
+        4.当参数跟局部变量重名的时候,优先级是等同
+         */
+//        var a = 10;
+//        function aaa (a) {
+//            alert(a);
+//            var a = 20;
+//        }
+//        aaa(a);
+
+//        var a = 5;
+//        var b = a;
+//
+//        b += 3;
+//        alert(a);
+
+//        var a = [1,2,3];
+//        var b = a;
+//        b.push(4);
+//        alert(a);
+
+//        var a = [1,2,3];
+//        var b = a;
+//        b = [1,2,3,4];
+//        alert(a);
+
+//        var a = 10;
+//        function aaa(a) {
+//            a += 3;
+//        }
+//
+//        aaa(a);
+//        alert(a);
+
+//        var a = [1,2,3];
+//        function aaa(a) {
+//            a.push(4);
+//        }
+//
+//        aaa(a);
+//        alert(a);
+
+        var a = [1,2,3];
+        function aaa(a) {
+            a = [1,2,3,4];
+        }
+
+        aaa(a);
+        alert(a);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

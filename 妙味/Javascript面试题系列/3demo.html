@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        /*
+        3.变连的查找就是就近原则去寻找,var定义的变量,当就近没有找到的话,就会查找外层
+         */
+//        var a = 10;
+//        function aaa () {
+//            alert(a);
+//            var a = 20;
+//        }
+
+
+        var a = 10;
+        function aaa () {
+
+            bbb();
+
+            alert(a);
+            function bbb () {
+                var a = 20;
+            }
+        }
+        aaa();
+    </script>
+</head>
+<body>
+
+</body>
+</html>
