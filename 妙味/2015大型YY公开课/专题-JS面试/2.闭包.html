@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*
+        函数嵌套函数,内部函数可以访问外部函数
+         */
+
+//        function fn1 () {
+//            var a = 1;
+//
+//            function fn2 () {
+//                //我们是可以访问到fn1中定义a的值的
+//                alert(a++);
+//            }
+//
+//            fn2();
+//        }
+//
+//        fn1();
+//        fn1();
+        /*
+        当一个函数被执行的时候,和函数有关的一些变量会被申明(出现在内存中),
+        当这个函数执行完成以后,如果函数中声明的变量没有被其他地方实用,则和
+        这个函数有关的数据会被自动销毁
+        */
+
+        function fn1 () {
+            var a = 1;
+
+            function fn2 () {
+                //我们是可以访问到fn1中定义a的值的
+                alert(a++);
+            }
+
+            //返回出去的是一个引用类型的值
+            return fn2;
+        }
+
+        var f = fn1();
+        f();
+        f();
+        f = 1;
+        f = fn1();
+        f();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

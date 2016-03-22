@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function fn1 (a, b) {
+            console.log(this);
+            console.log(a + b);
+        }
+
+//        fn1.call(document, 1, 2);
+
+        //apply 和call基本一致,不同的是参数的传递上
+
+        fn1.apply(document, [a, b]);  //第二个参数就是fn1中的arguments
+
+        var arr = [1,6,4,8,3,10,2];
+
+//        console.log(Math.max());  不能当数组传
+
+        console.log(Math.max.apply(null, arr));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
