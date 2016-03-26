@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        p {
+            height: 30px;
+            border: 1px solid black;
+        }
+
+        p:empty {
+            background: red;
+        }
+
+        span {
+            display: block;
+            height:20px;
+        }
+
+        p *:only-of-type {
+            background: yellow;
+        }
+
+        p *:only-child {
+            background: blue;
+        }
+
+
+    </style>
+</head>
+<body>
+<p></p>
+
+<h1>h1</h1>
+
+<p>p1</p>
+
+<h1>h1</h1>
+
+<p>p1</p>
+
+<h1>h1</h1>
+
+<p>p1</p>
+
+<h1>h1</h1>
+
+<p>p1<span></span></p>
+
+<h1>h1</h1>
+
+<p>
+    <span></span>
+    <a href="#">链接</a>
+</p>
+</body>
+</html>

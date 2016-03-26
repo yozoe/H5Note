@@ -49,11 +49,21 @@ body {
 }
 
 /* 欢迎页 */
+@-webkit-keyframes tree {
+    100%
+    {
+        -webkit-transform: translateY(0px);
+        opacity:1;
+    }
+}
 .tree {
     position: absolute;
     left:0;
     top:10%;
     width:100%;
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+    opacity: 0;
 }
 
 #logo {
@@ -89,5 +99,22 @@ body {
 }
 
 .cloud:nth-of-type(1) {
+    left: 432px;
+    top: 15px;
+    width: 58px;
+    height: 44px;
+}
 
+.cloud:nth-of-type(2) {
+    left: 79px;
+    top: 77px;
+    width: 91px;
+    height: 70px;
+}
+
+.cloud:nth-of-type(3) {
+    left: 402px;
+    top: 142px;
+    width: 54px;
+    height: 41px;
 }
