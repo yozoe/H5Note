@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            float:left;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            background-color: red;
+            border: 1px solid #fff;
+            font: 12px/30px "宋体";
+            -webkit-transform: skewX(30deg);
+        }
+        a {
+            text-decoration: none;
+            -webkit-transform: skewX(-30deg);
+            display: block;<!-- 不加这个无效 -->
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><a href="#">妙味课堂</a></li>
+    <li><a href="#">妙味茶馆</a></li>
+</ul>
+</body>
+</html>

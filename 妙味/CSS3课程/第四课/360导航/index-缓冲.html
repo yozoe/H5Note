@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #menu {
+            position: fixed;
+            width: 50px;
+            height:50px;
+            bottom: 20px;
+            right: 20px;
+        }
+        #menu_list {
+            width:42px;
+            height:42px;
+            position: relative;
+            margin: 4px;
+        }
+        #menu_list img {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        #home {
+            width:50px;
+            height: 50px;
+            background: url(home.png) no-repeat;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            -webkit-transition: 1s;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var oHome = document.getElementById("home");
+            var aImg = document.getElementById('menu_list').getElementsByTagName('img');
+            var bOff = true;
+            var iR = - 150;
+            oHome.onclick = function () {
+                if (bOff) {
+                    this.style.WebkitTransform = 'rotate(-360deg)';
+                    for (var i = 0; i < aImg.length; i++) {
+                        var oLt = toLT(iR, i * 90 / 4);
+                        aImg[i].style.transition = '0.5s ' + i * 100 + 'ms';
+                        aImg[i].style.left = oLt.l + "px";
+                        aImg[i].style.top = oLt.t + "px";
+                        aImg[i].style.WebkitTransform = 'rotate(-720deg)';
+                    }
+                } else {
+                    this.style.WebkitTransform = 'rotate(0deg)';
+                    for (var i = 0; i < aImg.length; i++) {
+                        var oLt = toLT(iR, i * 90 / 4);
+                        aImg[i].style.transition = '0.5s ' + (aImg.length - i - 1) * 100 + 'ms';
+                        aImg[i].style.left = 0 + "px";
+                        aImg[i].style.top = 0 + "px";
+                        aImg[i].style.WebkitTransform = 'rotate(-0deg)';
+                    }
+                }
+                bOff = !bOff;
+            }
+
+        }
+        function toLT (iR, iDeg) {
+            return {l:Math.round(Math.sin(iDeg / 180 * Math.PI) * iR),
+                t:Math.round(Math.cos(iDeg / 180 * Math.PI) * iR)};
+        }
+        /*
+        已知三角形的斜边长度和夹角 求对边(sin)和邻边的长度
+         */
+    </script>
+</head>
+<body>
+<div id="menu">
+    <div id="menu_list">
+        <img src="prev.png" />
+        <img src="open.png" />
+        <img src="clos.png" />
+        <img src="full.png" />
+        <img src="refresh.png" />
+    </div>
+    <div id="home"></div>
+</div>
+</body>
+</html>
