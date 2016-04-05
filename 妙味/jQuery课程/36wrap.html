@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.12.2.min.js"></script>
+    <script>
+        /*
+        wrap() : 包装
+        wrapAll() : 整体包装
+        wrapInner() : 内部包装
+        wrapInner() : 删除包装 (删除父级 : 不包括body)
+         */
+        $(function () {
+            $('span').wrap('<div>');
+        })
+    </script>
+</head>
+<body>
+<span>span</span>
+<span>span</span>
+<span>span</span>
+</body>
+</html>

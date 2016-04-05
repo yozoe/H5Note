@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        $(function () {
+            $('div').click(function (ev) {
+                //ev : event对象
+                //ev.pageX(相对于文档的) : clientX(相对于可视区)
+                //ev.which : keyCode
+                ev.preventDefault();    //阻止默认事件
+                ev.stopPropagation();   //阻止冒泡的操作
+                return false;   //阻止上面那俩
+            });
+        });
+    </script>
+</head>
+<body>
+<div>div</div>
+</body>
+</html>

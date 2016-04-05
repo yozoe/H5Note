@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.12.2.min.js"></script>
+    <script>
+
+        $(function () {
+            $("#div1").on('click', function () {
+                alert(123);
+            });
+            $('#div1').trigger('click');
+        })
+    </script>
+</head>
+<body>
+<div id="div1"></div>
+</body>
+</html>

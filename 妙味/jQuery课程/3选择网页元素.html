@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.12.2.min.js"></script>
+</head>
+<body>
+<ul>
+    <li></li>
+    <li title="hello"></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li title="hello"></li>
+</ul>
+<script>
+//    $('li:even').css('background', 'red');
+    $('li:eq(0)').css('background', 'blue');
+    $('li').filter('[title=hello]').css('background', 'red');
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.12.2.min.js"></script>
+    <script>
+        /*
+        parents() : 获取当前元素的所有祖先节点,参数就是筛选功能
+        closest() : 获取最近的指定的祖先节点(包括当前元素自身),必须要写筛选的参数,只要找到一个元素
+         */
+        $(function () {
+//            $('#div2').parents().css('background', 'red');
+            //只留body
+//            $('#div2').parents('body').css('background', 'red');
+            $('#div2').closest('body').css('background', 'red');
+        });
+    </script>
+</head>
+<body>
+<div id="div1">aaa
+    <div id="div2">bbb</div>
+</div>
+</body>
+</html>

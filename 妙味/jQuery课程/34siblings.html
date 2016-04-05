@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.12.2.min.js"></script>
+    <script>
+
+        /*
+        siblings() : 找所有的兄弟节点,参数也是筛选功能
+        nextAll() : 下面所有的兄弟节点,参数也是筛选功能
+        prevAll() : 上面所有的兄弟节点,
+        Until() : 截止
+         */
+        $(function () {
+//            $('span').siblings().css('background', 'red');
+//            $('span').nextAll().css('background', 'red');
+            $('span').prevAll().css('background', 'red');
+        });
+    </script>
+</head>
+<body>
+<div>div</div>
+<span>span</span>
+<p>p</p>
+<h1>h1</h1>
+</body>
+</html>

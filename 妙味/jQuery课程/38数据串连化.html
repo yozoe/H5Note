@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.12.2.min.js"></script>
+    <script>
+
+        $(function () {
+//            var result = $('form').serialize();
+            var result = $('form').serializeArray();
+            console.log(result);
+        })
+    </script>
+</head>
+<body>
+<form>
+    <input type="text" name="a" value="1">
+    <input type="text" name="b" value="2">
+    <input type="text" name="c" value="3">
+</form>
+</body>
+</html>

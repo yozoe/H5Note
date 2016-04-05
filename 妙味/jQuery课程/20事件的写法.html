@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    </style>
+    <script src="jquery-1.12.2.min.js"></script>
+    <script>
+        $(function(){
+            $('div').on('click mouseover', function() {
+                console.log(123);
+                $('div').off('mouseover');
+            });
+        });
+
+    </script>
+</head>
+<body>
+<div>div</div>
+<span>span</span>
+</body>
+</html>
