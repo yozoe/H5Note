@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1 {
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+
+        #div2 {
+            width: 100px;
+            height: 100px;
+            background: yellow;
+        }
+
+    </style>
+
+    <script>
+        window.onload = function () {
+
+            /*
+             enter -> over
+             leaver -> out
+             只有当我们的鼠标完全从一个元素外部移入到他的内部或者完全从一个元素内部移出的时候,才会触发enter,leaver事件,也就是说,从父级到子集是不会触发enter和leave
+             */
+            var oDiv1 = document.getElementById('div1');
+            var oDiv2 = document.getElementById('div2');
+
+            oDiv1.onmouseenter = function () {
+                console.log('1-over');
+            }
+
+            oDiv1.onmouseleave = function () {
+                console.log('1-out');
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="div1">
+    <div id="div2"></div>
+</div>
+</body>
+</html>

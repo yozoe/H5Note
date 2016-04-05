@@ -37,13 +37,26 @@
                         3.是否异步
                  */
 
+                /*
+                    readystate
+                    responseText
+                    on readystate change
+                    status
+                 */
+
                 var xhr = new XMLHttpRequest();
                 xhr.open('get', '1.txt', true);
                 xhr.send();
 
                 xhr.onreadystatechange = function () {
                     if (xhr.readyState == 4) {
-                        alert(xhr.responseText);
+                        if (xhr.status == 200) {
+//                            alert(xhr.responseText);
+                            var data = JSON.parse(xhr.responseText);
+                            alert(data.name);
+                        } else {
+                            alert("出错了" + xhr.status);
+                        }
                     }
                 }
             }

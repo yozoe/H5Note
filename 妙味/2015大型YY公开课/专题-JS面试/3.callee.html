@@ -51,7 +51,7 @@
             var _arguments = arguments;
             setTimeout(function () {
                 document.title = a++;
-                //不能这么用
+                //涉及到变量作用域问题, 所以不能这么用
 //                argument.callee();
                 _arguments.callee();
             }, 100);

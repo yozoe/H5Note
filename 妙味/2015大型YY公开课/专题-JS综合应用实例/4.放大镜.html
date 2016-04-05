@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1 {
+            width: 180px;
+            height: 180px;
+            position: relative;
+        }
+
+        #img1 {
+            display: block;
+        }
+
+        #div2{
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            position: absolute;
+            opacity: 0.5;
+            display: none;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var oDiv1 = document.getElementById('div1');
+            var oDiv2 = document.getElementById('div2');
+
+            oDiv1.onmouseenter = function () {
+                oDiv2.style.display = 'block';
+            }
+
+            oDiv1.onmousemove = function (ev) {
+
+                var ev = ev || window.event;
+
+                var L = ev.clientX - oDiv2.offsetWidth / 2;
+                var T = ev.clientY - oDiv2.offsetHeight / 2;
+
+                if (L < 0) {
+                    L = 0;
+                } else if (L > oDiv1.offsetWidth - oDiv2.offsetWidth) {
+                    L = oDiv1.offsetWidth - oDiv2.offsetWidth;
+                }
+
+                if (T < 0) {
+                    T = 0;
+                } else if (T > oDiv1.offsetHeight - oDiv2.offsetHeight) {
+                    T = oDiv1.offsetHeight - oDiv2.offsetHeight;
+                }
+
+
+                oDiv2.style.left = L + 'px';
+                oDiv2.style.top = T + 'px';
+            }
+
+            oDiv1.onmouseleave = function () {
+                oDiv2.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="div1">
+    <img id="img1" src="b2.jpg" />
+    <div id="div2"></div>
+</div>
+</body>
+</html>

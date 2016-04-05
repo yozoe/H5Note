@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1 {
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+
+        #div2 {
+            width: 100px;
+            height: 100px;
+            background: yellow;
+        }
+
+    </style>
+
+    <script>
+        window.onload = function () {
+
+            /*
+            over,out
+            当鼠标移出目标元素范围,就触发一个out事件,就算你是从父级移动到子级也会触发,over也一样
+             */
+
+            var oDiv1 = document.getElementById('div1');
+            var oDiv2 = document.getElementById('div2');
+
+            oDiv1.onmouseover = function () {
+                console.log('1-over');
+            }
+
+            oDiv1.onmouseout = function () {
+                console.log('1-out');
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="div1">
+    <div id="div2"></div>
+</div>
+</body>
+</html>
