@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="angular.min.js"></script>
+    <script>
+        function Aaa ($scope, $timeout) {
+            $scope.name = 'hello';
+        }
+    </script>
+</head>
+<body>
+<!--<div ng-controller="Aaa" ng-click="name='hi'">-->
+<div ng-controller="Aaa">
+    <input type="text" ng-model="name">
+    <p>{{name}}</p>
+</div>
+</body>
+</html>
