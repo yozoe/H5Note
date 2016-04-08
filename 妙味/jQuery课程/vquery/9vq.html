@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1 {
+            width:100px;
+            height:100px;
+            background: red;
+        }
+    </style>
+    <script src="vquery.js"></script>
+    <script>
+
+        $(function () {
+
+            $('ul').find('li').css('background', 'red');
+//            $('ul').find('.box').css('background', 'red');
+
+        });
+
+
+    </script>
+</head>
+<body>
+<ul>
+    <li class="box"></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<ol>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ol>
+<ul>
+    <li class="box"></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li class="box"></li>
+</ul>
+</body>
+</html>

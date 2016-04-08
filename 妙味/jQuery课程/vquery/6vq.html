@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1 {
+            width:100px;
+            height:100px;
+            background: red;
+        }
+    </style>
+    <script src="vquery.js"></script>
+    <script>
+
+        $(function () {
+
+            $('#div1').hover(function () {
+//                this.style.background = 'yellow';
+                $(this).css({
+                    'background' : 'yellow'
+                });
+
+            }, function () {
+//                this.style.background = 'red';
+                $(this).css('background', 'red');
+            });
+
+        });
+
+
+    </script>
+</head>
+<body>
+<div id="div1">aaaaa</div>
+<p>p</p>
+<p>p</p>
+<p>p</p>
+<p>p</p>
+</body>
+</html>

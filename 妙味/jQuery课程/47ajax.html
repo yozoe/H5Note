@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.12.2.min.js"></script>
+    <script>
+        $.ajax({
+            url : 'http://www.baidu.com',
+            data : 'name=hello&age=20',
+            type : 'GET',
+            success : function (data) {
+                alert(1);
+            },
+            error : function () {
+                alert(2);
+            }
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>

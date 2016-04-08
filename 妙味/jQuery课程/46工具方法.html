@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.12.2.min.js"></script>
+    <script>
+
+        /*
+        noConflict() : 防止冲突的
+         */
+
+//        var miaov = $.noConflict();
+//
+//        var $ = 10;
+//
+//        miaov(function () {
+//
+//            miaov('body').css('background', 'red');
+//
+//        })
+
+
+
+//        var str = '{"name" : "hello"}';
+//        alert($.parseJSON(str).name);
+
+        window.onload = function () {
+            var aDiv = document.getElementsByTagName('div');
+
+            alert($.makeArray(aDiv));
+        }
+
+    </script>
+</head>
+<body>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</body>
+</html>
