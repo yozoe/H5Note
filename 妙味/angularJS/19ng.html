@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .red {
+            background: red;
+        }
+        .yellow {
+            background: yellow;
+        }
+    </style>
+
+    <script src="angular.min.js"></script>
+    <script>
+
+        var m1 = angular.module('myApp', []);
+
+        m1.controller('Aaa', ['$scope', '$interval', function ($s, $i) {
+
+            $s.text = "hello";
+
+            $s.style = "{color:'red',background:'yellow'}";
+            $s.sClass = "{red:true,yellow:true}";
+
+            $s.url = "http://www.baidu.com"
+        }]);
+    </script>
+</head>
+<body>
+<div ng-controller="Aaa">
+    <!--<div ng-class="{red:true,yellow:true}">{{text}}</div>-->
+    <div ng-class="{{sClass}}">{{text}}</div>
+    <!--<div ng-style="{color:'red',background:'yellow'}">{{text}}</div>-->
+    <div ng-style="{{style}}">{{text}}</div>
+    <!--<a ng-href="{{url}}">百度</a>-->
+    <a ng-attr-href="{{url}}" ng-attr-title="{{text}}">百度</a>
+</div>
+<script>
+//    alert(1);
+</script>
+</body>
+</html>

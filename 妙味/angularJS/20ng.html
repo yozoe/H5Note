@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+    </style>
+
+    <script src="angular.min.js"></script>
+    <script>
+
+        var m1 = angular.module('myApp', []);
+
+        m1.controller('Aaa', ['$scope', '$interval', function ($s, $i) {
+
+            $s.bBtn = true;
+
+        }]);
+    </script>
+</head>
+<body>
+<div ng-controller="Aaa">
+    <input type="checkbox" ng-model="bBtn">
+    <!--<div ng-show="bBtn">aaaaaa</div>-->
+    <div ng-if="bBtn">aaaaaa</div><!-- DOM的添加删除操作 -->
+    <div ng-switch on="btn">
+        <p ng-switch-default>默认的效果</p>
+        <p ng-switch-when="false">切换的效果</p>
+    </div>
+</div>
+</body>
+</html>

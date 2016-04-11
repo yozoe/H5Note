@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="angular.min.js"></script>
+    <script>
+
+        var m1 = angular.module('myApp1', []);
+        var m2 = angular.module('myApp2', []);
+        m1.controller('Aaa', ['$scope', function ($s) {
+            $s.name = 'hello';
+        }]);
+        m2.controller('Bbb', ['$scope', function ($s) {
+            $s.name = 'hi';
+        }]);
+
+        document.onclick = function () {
+
+            var aDiv = document.getElementsByTagName('div');
+
+            angular.bootstrap(aDiv[0], ['myApp1']);
+            angular.bootstrap(aDiv[1], ['myApp2']);
+        }
+
+        /*
+        指令多个初始化只能识别一个
+        用bootstrap可以
+         */
+    </script>
+</head>
+<body>
+<!--<div ng-controller="Aaa" ng-app="myApp1">-->
+    <!--<p>{{name}}</p>-->
+<!--</div>-->
+<!--<div ng-controller="Bbb" ng-app="myApp2">-->
+    <!--<p>{{name}}</p>-->
+<!--</div>-->
+
+
+<div ng-controller="Aaa">
+    <p>{{name}}</p>
+</div>
+<div ng-controller="Bbb">
+    <p>{{name}}</p>
+</div>
+
+
+</body>
+</html>

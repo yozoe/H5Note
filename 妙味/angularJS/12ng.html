@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="angular.min.js"></script>
+    <script>
+
+        var m1 = angular.module('myApp', []);
+
+        m1.filter('firstUpper', function() {
+            return function (str,num) {
+                console.log(num);
+                return str.charAt(0).toUpperCase() + str.substring(1);
+            }
+        });
+
+        m1.controller('Aaa', ['$scope','$filter', function ($s,$f) {
+            $s.name = '1231239898.123990';
+            $s.name1 = 'hello';
+            $s.name2 = {"name":"hello"};
+            $s.name3 = "hello";
+            $s.name4 = ['a', 'b', 'c'];
+            $s.name5 = 1232139920302;
+            $s.name6 = [
+                {color:'red',age:'40'},
+                {color:'yellow',age:'61'},
+                {color:'blue',age:'22'},
+                {color:'green',age:'33'},
+            ];
+
+//            $s.name7 = $f('uppercase')('hello');
+            $s.name7 = $f('number')('2394398.349384', 1);
+            $s.name8 = "nimeimei";
+            $s.name9 = $f('firstUpper')('dayede');
+        }]);
+    </script>
+</head>
+<body>
+<div ng-controller="Aaa">
+    <p>{{ name | number:6 }}</p>
+    <p>{{ name1 | uppercase }}</p>
+    <pre>{{name2 | json}}</pre>
+    <p>{{ name3 | limitTo:3 }}</p>
+    <p>{{ name4 | limitTo:2 }}</p>
+    <p>{{ name5 | date:'yyyy-dd-mm hh:mm:ss' }}</p>
+    <p>{{name6 | orderBy:'age':true}}</p>
+    <p>{{name6 | filter:'red'}}</p>
+    <p>{{name6 | filter:'61'}}</p>
+    <p>{{name6 | filter:'l':true}}</p>
+    <p>{{name1 | limitTo : 2 | uppercase }}</p>
+    <p>{{name7}}</p>
+    <p>{{name8 | firstUpper:2}}</p>
+    <p>{{name9}}</p>
+</div>
+</body>
+</html>

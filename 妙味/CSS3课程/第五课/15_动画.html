@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @-moz-keyframes domove {
+            0% {
+                top:0;
+                left:0;
+            }
+            25% {
+                top:0;
+                left:300px;
+            }
+            50% {
+                top:300px;
+                left:300px;
+            }
+            75% {
+                top: 300px;
+                left: 0px;
+            }
+            100% {
+                top:0;
+                left:0;
+            }
+        }
+        #wrap {
+            width:400px;
+            height: 400px;
+            border: 1px solid #000;
+            position: relative;
+        }
+        .box {
+            width: 100px;
+            height:100px;
+            background: red;
+            position: absolute;
+            left:0;
+            top:0;
+            -moz-animation: 4s domove linear infinite alternate;
+        }
+        #wrap:hover .box {
+            -moz-animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div class="box"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .active1 {
+            background: red;
+        }
+        .active2 {
+            background: blue;
+        }
+    </style>
+
+    <script src="angular.min.js"></script>
+    <script>
+
+        var m1 = angular.module('myApp', []);
+
+        m1.controller('Aaa', ['$scope', function ($s) {
+            $s.dataList = [
+                'aaaaa', 'bbbbb', 'ccccc', 'ddddd', 'eeeee'
+            ];
+        }]);
+    </script>
+</head>
+<body>
+<div ng-controller="Aaa">
+
+    <input type="checkbox" ng-model="aaa">
+    <select>
+        <option>111</option>
+        <option ng-selected="aaa">222</option>
+        <option>{{aaa}}</option>
+    </select>
+
+    <!-- ng-change ng-model必须共存 -->
+    <input type="text" ng-change="bbb='hello'" ng-model="bbb">{{bbb}}<br>
+    <input type="text" ng-copy="ccc=true" value="aasdasdksjd">{{ccc}}
+    <input type="text" ng-cut="ddd=true" value="aasdasdksjd">{{ddd}}
+    <input type="text" ng-paste="eee=true" value="aasdasdksjd">{{eee}}
+</div>
+</body>
+</html>

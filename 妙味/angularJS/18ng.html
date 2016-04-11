@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+    </style>
+
+    <script src="angular.min.js"></script>
+    <script>
+
+        var m1 = angular.module('myApp', []);
+
+        m1.controller('Aaa', ['$scope', '$interval', function ($s, $i) {
+
+            $s.text = "<h1>hello</h1>";
+
+
+        }]);
+    </script>
+</head>
+<body>
+<div ng-controller="Aaa">
+    <!--<div ng-bind="text"></div>-->
+    <!--<div>{{text}},{{text}}</div>-->
+    <!--<div ng-bind-template="{{text}},{{text}}"></div>-->
+    <!-- 通过cdn www.bootcdn.cn/angular.js/ -->
+    <!--<div ng-bind-html="text"></div>-->
+    <div ng-cloak>{{text}}</div>
+    <div ng-non-bindable>{{text}}</div>
+</div>
+<script>
+    alert(1);
+</script>
+</body>
+</html>

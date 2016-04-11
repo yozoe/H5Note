@@ -14,8 +14,15 @@ define(function(require,exports,module){
 
             document.onmousemove = function(ev) {
                 var ev = ev || window.event;
-                obj.style.left = ev.clientX - disX + 'px';
-                obj.style.top = ev.clientY - disY + 'px';
+
+                var L = ev.clientX - disX;
+                var T = ev.clientY - disY;
+
+                L = require('./range.js').range(L, document.documentElement.clientWidth - obj.offsetWidth, 0);
+                T = require('./range.js').range(T, document.documentElement.clientHeight - obj.offsetHeight, 0);
+
+                obj.style.left = L + 'px';
+                obj.style.top = T + 'px';
             }
 
             document.onmouseup = function() {

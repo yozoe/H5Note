@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="angular.min.js"></script>
+    <script>
+
+        var m1 = angular.module('myApp', []);
+
+        m1.controller('Aaa', ['$scope', '$filter', function ($s, $f) {
+
+            var oriArr = [
+                {name:'red', age:'20'},
+                {name:'yellow', age:'50'},
+                {name:'blue', age:'40'},
+                {name:'green', age:'10'},
+            ];
+
+            $s.dataList = [
+                {name:'red', age:'20'},
+                {name:'yellow', age:'50'},
+                {name:'blue', age:'40'},
+                {name:'green', age:'10'},
+            ];
+
+            $s.fnSort = function (arg) {
+
+                arguments.callee['fnSort' + arg] = !arguments.callee['fnSort' + arg];
+                console.log(arguments.callee['fnSort' + arg]);
+
+                $s.dataList = $f('orderBy')($s.dataList, arg, arguments.callee['fnSort' + arg]);
+
+            }
+
+            $s.fnFilter = function () {
+                $s.dataList = $f('filter')(oriArr, $s.filterVal);
+            }
+        }]);
+    </script>
+</head>
+<body>
+<div ng-controller="Aaa">
+    <input type="text" ng-model="filterVal"><input type="button" value="搜索" ng-click="fnFilter()">
+    <table border="1">
+        <tr>
+            <th ng-click="fnSort('name')">姓名</th>
+            <th ng-click="fnSort('age')">年龄</th>
+        </tr>
+        <tr ng-repeat="data in dataList">
+            <td>{{data.name}}</td>
+            <td>{{data.age}}</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="angular.min.js"></script>
+    <script>
+        function Aaa ($scope, $timeout) {
+            $scope.name = 'hello';
+            setTimeout(function () {
+//                $scope.name = 'hi';
+                //监听数据变化, 有变化就会影响视图,其他一般都会自己调apply,这里是手动调用
+                $scope.$apply(function () {
+                    $scope.name = 'mabi';
+                });
+            }, 2000);
+
+//            $timeout(function () {
+//                $scope.name = 'hi';
+//            }, 2000);
+
+            $scope.show = function () {
+                $scope.name = 'hi';
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+<!--<div ng-controller="Aaa" ng-click="name='hi'">-->
+<div ng-controller="Aaa" ng-click="show()">
+    <p>{{name}}</p>
+</div>
+</body>
+</html>

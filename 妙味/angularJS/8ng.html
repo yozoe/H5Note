@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="angular.min.js"></script>
+    <script>
+        var a = [];
+//        console.log(angular.isArray(a));
+
+        window.onload = function () {
+//            console.log(angular.isElement(document.body));
+        }
+
+//        var values = ['a', 'b', 'c'];
+        var values = {'name' : 'hello', 'age' : '20'};
+
+        var result = [];
+
+        angular.forEach(values, function (value, i) {
+//            console.log(value);
+//            console.log(i);
+            this.push('hehe');
+            //this就是那个result
+        }, result);
+
+//        console.log(result);
+
+
+        //JSON.parse() JSON.stringify()
+
+//        var str = '{"name":"hello"}';
+//        var json = angular.fromJson(str);
+//        console.log(json);
+
+//        var json = {"name":"hello"};
+////        var str = angular.toJson(json);
+//        var str = angular.toJson(json, true);
+//        console.log(str);
+
+        var str = 'hello';
+        console.log(angular.identity(str))
+
+        function identity (str) {
+            return str;
+        }
+
+        console.log(angular.noop());    //
+
+        function noop () {
+
+        }
+
+        function hehe (fn) {
+            (fn || noop)('mabi');
+        }
+
+        function test (a) {
+            console.log(a);
+        }
+
+        hehe();
+
+
+        console.log(angular.lowercase('ABCD'));
+        console.log(angular.uppercase('abcd'));
+
+    </script>
+
+</head>
+<body>
+<div id="div1">aaaaaa</div>
+<script>
+    var oDiv = document.getElementById('div1');
+    angular.element(oDiv).css('background', 'red');
+//报错, 需要引入jq库    angular.element('#div1').css('background', 'red');
+    //angular.element === $
+</script>
+</body>
+</html>
