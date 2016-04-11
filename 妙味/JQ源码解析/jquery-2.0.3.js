@@ -95,8 +95,7 @@ var
 
 jQuery.fn = jQuery.prototype = {
 	// The current version of jQuery being used
-	jquery: core_version,
-
+      
 	constructor: jQuery,
 	init: function( selector, context, rootjQuery ) {
 		var match, elem;

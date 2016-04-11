@@ -4,18 +4,45 @@
     <meta charset="UTF-8">
     <title></title>
     <script>
+        //window
         //1.查找速度会快
-        //2.压缩的时候有用
+        //2.压缩的时候有用,不然变成w也没法用啊
 
+        //undefined是个属性,不是关键字,有可能被修改
         //传undefined, window下的一个属性, 某些浏览器可以修改其值
         (function(window){
 
         })(window);
 
+        //假如判断xml的节点属性的时候,判断不出来
         window.a == undefined
 
         //这是全兼容的
         typeof window.a == 'undefined';
+
+        //$.type()
+        //class2Type = {'[Object String]' : 'string', '[Object Array]' : 'array};
+
+        function jQuery() {
+            //这么new的话,连带init一块执行了
+            return new jQuery.prototype.init();
+        }
+
+        jQuery.prototype.init = function () {
+
+        }
+
+        jQuery.prototype.css = function () {
+
+        }
+
+        //把jq的原型赋给了jq的原型的init构造函数的原型,这俩是同一个引用
+//        jQuery.prototype.init.prototype = jQuery.prototype;
+
+        /*
+        jq都是这么去调用的
+        jQuery().css();
+         */
 
     </script>
 </head>
