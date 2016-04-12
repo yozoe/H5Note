@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+    </style>
+
+    <script src="angular.min.js"></script>
+    <script>
+
+        var m1 = angular.module('myApp', []);
+
+        m1.controller('Aaa', ['$scope', function ($s) {
+            $s.colors = [
+                {name : 'red'},
+                {name : 'yellow'},
+                {name : 'blue'},
+                {name : 'green'},
+            ];
+        }]);
+
+    </script>
+</head>
+<body>
+
+<div ng-controller="Aaa" ng-app="myApp">
+    <!-- 里面的是指令标签 -->
+    <a href="">{{myColor.name}}</a>
+    <select ng-options="color.name for color in colors" ng-model="myColor">
+
+    </select>
+
+    <form novalidate>
+        <input type="email">
+    </form>
+</div>
+
+<a href="">bbbbb</a>
+
+</body>
+</html>

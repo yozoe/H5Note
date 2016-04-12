@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+    </style>
+
+    <script src="angular.min.js"></script>
+    <script>
+
+        var m1 = angular.module('myApp', []);
+
+        m1.controller('Aaa', ['$scope', '$interval', function ($s, $i) {
+
+//            $s.text = 'hello';
+
+        }]);
+    </script>
+</head>
+<body>
+<div ng-controller="Aaa" ng-include="'temp.html'">
+</div>
+
+
+</body>
+</html>

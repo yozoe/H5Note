@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+    </style>
+
+    <script src="angular.min.js"></script>
+    <script>
+
+        var m1 = angular.module('myApp', []);
+
+//        m1.controller('Aaa', ['$scope', '$interval', function ($s, $i) {
+//
+//            $s.text = 'hello';
+//
+//        }]);
+
+        m1.controller('Aaa', ['$scope', FnAaa]);
+        function FnAaa ($scope) {
+
+        }
+
+        FnAaa.prototype.text = "hello";
+        FnAaa.prototype.show = function () {
+            return 'angularJS';
+        }
+    </script>
+</head>
+<body>
+<!--<div ng-controller="Aaa">-->
+    <!--<input type="text" ng-model="text" ng-model-options="{updateOn : 'blur'}">-->
+    <!--<div>{{text}}</div>-->
+<!--</div>-->
+
+<!-- 创建一个a1对象 -->
+<div ng-controller="FnAaa as a1">
+    <div>{{a1.text}}:{{a1.show()}}</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+    </style>
+
+    <script src="angular.min.js"></script>
+    <script>
+
+        var m1 = angular.module('myApp', []);
+
+        m1.controller('Aaa', ['$scope', function ($s) {
+            $s.regText = {
+                regVal : 'default',
+                regList : [
+                    {name:'default',tips:'请输入用户名'},
+                   {name:'required',tips:'用户名不能为空'},
+                    {name:'pattern',tips:'用户名必须是字母'},
+                    {name:'pass',tips:'对号'}
+                ],
+                change : function (error) {
+                    console.log(error);
+                    for (var attr in error) {
+                        if (error[attr] == true) {
+                            this.regVal = attr;
+                            return;
+                        }
+                    }
+                    this.regVal = 'pass';
+                }
+            };
+
+            $s.regPassword = {
+
+            };
+
+
+        }]);
+
+    </script>
+</head>
+<body>
+
+<div ng-controller="Aaa" ng-app="myApp">
+
+    <form novalidate name="nForm">
+        <div>
+            <label>用户名:</label>
+            <!-- ng-model用不上也得写, 验证用 -->
+            <input type="text" name="nText" ng-model="regText.name" required ng-pattern="/^[a-zA-Z]+$/" ng-blur="regText.change(nForm.nText.$error)">
+            <span ng-repeat=" re in regText.regList | filter:regText.regVal ">{{re.tips}}</span>
+        </div>
+        <div>
+            <label>密码:</label>
+            <input type="password" name="nText" ng-model="regPassword.name" required ng-minlength="6">
+            <span>请输入用密码</span>
+            <div>{{regPassword}}</div>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

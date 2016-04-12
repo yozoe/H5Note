@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        input.ng-valid {
+            border: 10px solid green;
+        }
+        input.ng-invalid {
+            border: 10px red solid;
+        }
+    </style>
+
+    <script src="angular.min.js"></script>
+    <script>
+
+        var m1 = angular.module('myApp', []);
+
+        m1.controller('Aaa', ['$scope', function ($s) {
+            $s.text = 'hello';
+        }]);
+
+    </script>
+</head>
+<body>
+
+<div ng-controller="Aaa" ng-app="myApp">
+
+    <form novalidate name="myForm">
+        <input type="text" name="myText" ng-model="text" required ng-minlength="5" ng-maxlength="10" ng-pattern="/^[a-zA-Z]+$/">
+        <div>{{myForm.myText.$valid}}</div>
+        <div>{{myForm.myText.$invalid}}</div>
+        <div>{{myForm.myText.$pristine}}</div>
+        <div>{{myForm.myText.$dirty}}</div>
+        <div>{{myForm.myText.$error}}</div>
+    </form>
+</div>
+
+<a href="">bbbbb</a>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        #div1 div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            display: none;
+        }
+
+        #div1 input.active {
+            background: red;
+        }
+    </style>
+
+    <script src="angular.min.js"></script>
+    <script>
+
+        var m1 = angular.module('myApp', []);
+
+        /*
+         E:标签
+         A:属性
+         C:解析成class相对的指令
+         M:注释(必须写replace)
+         */
+
+        m1.directive('myTab', function () {
+            return {
+                restrict : 'E',    //区分大小写,组合使用
+                replace : true,      //replace是替换标签
+                templateUrl : 'temp2.html'
+            };
+        });
+
+        m1.controller('Aaa', ['$scope', function ($s) {
+
+        }]);
+
+    </script>
+</head>
+<body>
+
+<my-tab></my-tab>
+
+</body>
+</html>

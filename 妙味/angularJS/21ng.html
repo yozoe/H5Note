@@ -15,25 +15,25 @@
 
         m1.controller('Aaa', ['$scope', '$interval', function ($s, $i) {
 
-            $s.bBtn = true;
+//            $s.text = 'hello';
+
+            $s.arr = [['a','b'],['c','d']];
 
         }]);
     </script>
 </head>
 <body>
+<div ng-controller="Aaa" ng-init="text='hello'">
+    {{text}}
+</div>
+
 <div ng-controller="Aaa">
-    <input type="checkbox" ng-model="bBtn">
-    <!--<div ng-show="bBtn">aaaaaa</div>-->
-    <div ng-if="bBtn">aaaaaa</div>
-    <!-- DOM的添加删除操作 -->
-    <div ng-switch on="bBtn">
-        <p ng-switch-default>默认的效果</p>
-        <p ng-switch-when="false">切换的效果</p>
+    <div ng-repeat="arrOuter in arr" ng-init="outerIndex = $index">
+        <div ng-repeat="arrInner in arrOuter" ng-init="innerIndex = $index">
+            <p>{{arrInner}} : {{outerIndex}} {{innerIndex}}</p>
+        </div>
     </div>
 </div>
-<details ng-open="bBtn">
-    <summary>sdsaasd</summary>
-    <p>sdsdaadsda</p>
-</details>
+
 </body>
 </html>
