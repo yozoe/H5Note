@@ -38,10 +38,48 @@ function removeClass(obj, sClass) {
     var aClass = obj.className.split(' ');
     if (!obj.className) return;
     for (var i = 0; i < aClass.length; i++) {
-        if (aClass === sClass) {
-            aClass.slice(i, 1);
+        if (aClass[i] === sClass) {
+            aClass.splice(i, 1);
             obj.className = aClass.join(' ');
             break;
         }
     }
+}
+
+function fnLoad () {
+    var iTime = new Date().getTime();
+    var oW = id('welcome');
+    var arr = [""];
+    var bImgLoad = true;
+    var bTime = false;
+    var oTimer = 0;
+
+    bind(oW, 'transitionend', end);
+
+    //if (bImgLoad && bTime) {
+    //
+    //}
+
+    oTimer = setInterval(function () {
+        if (new Date().getTime() - iTime >= 5000) {
+            bTime = true;
+        }
+        if (bImgLoad && bTime) {
+            clearInterval(oTimer);
+            oW.style.opacity = 0;
+
+        }
+    }, 1000);
+
+    function end () {
+        removeClass(oW, 'pageShow');
+    }
+
+    //for (var i = 0; i < arr.length; i++) {
+    //    var oImg = new Image();
+    //    oImg.src = arr[i];
+    //    oImg.onload = function () {
+    //
+    //    }
+    //}
 }
