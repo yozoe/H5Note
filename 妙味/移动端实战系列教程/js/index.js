@@ -25,7 +25,7 @@ function view() {
 function addClass(obj, sClass) {
     var aClass = obj.className.split(' ');
     if (!obj.className) {
-        obj.className = aClass;
+        obj.className = sClass;
         return;
     }
     for (var i = 0; i < aClass.length; i++) {
@@ -82,4 +82,106 @@ function fnLoad () {
     //
     //    }
     //}
+}
+
+bind(document, "touchmove", function (ev) {
+    ev.preventDefault();
+});
+
+function fnTab () {
+    var oTab = id('tabPic');
+    var oList = id('picList');
+    var aNav = oTab.getElementsByTagName('nav')[0].children;
+    var iNow = 0;
+
+    var iX = 0;
+    var iW = view().w;
+
+    var iStartTouchX = 0;
+    var iStartX = 0;
+
+    var oTimer = 0;
+
+    bind(oTab, "touchstart", fnStart);
+    bind(oTab, 'touchmove', fnMove);
+    bind(oTab, 'touchend', fnEnd);
+
+    auto();
+    fnScore();
+
+    function auto() {
+        oTimer = setInterval(function () {
+            iNow++;
+            iNow = iNow % aNav.length;
+            tab();
+        }, 2000);
+    }
+
+    function fnStart (ev) {
+        oList.style.transition = 'none';
+        ev = ev.changedTouches[0];
+        iStartTouchX = ev.pageX;
+        iStartX = iX;
+        clearInterval(oTimer);
+    }
+
+    function fnMove (ev) {
+        ev = ev.changedTouches[0];
+        var iDis = ev.pageX - iStartTouchX;
+        iX = iStartX + iDis;
+        oList.style.WebkitTransform = "translateX(" + iX + "px)";
+    }
+
+    function fnEnd () {
+        iNow = iX / iW;
+
+        iNow = -Math.round(iNow);
+
+        if (iNow < 0) {
+            iNow = 0;
+        }
+        iNow = iNow % aNav.length;
+
+        if (iNow > aNav.length - 1) {
+            iNow = aNav.length - 1;
+        }
+
+        tab();
+        auto();
+    }
+
+    function tab () {
+        iX = -iNow * iW;
+        oList.style.WebkitTransform = "translateX(" + iX + "px)";
+        oList.style.transition = '0.5s';
+
+        for (var i = 0; i < aNav.length; i++) {
+            removeClass(aNav[i], 'active');
+        }
+        addClass(aNav[iNow], 'active');
+    }
+}
+
+function fnScore () {
+    var oScore = id('score');
+    var aLi = oScore.getElementsByTagName('li');
+    for (var i = 0; i < aLi.length; i++) {
+        fn(aLi[i]);
+    }
+    function fn (oLi) {
+        var aNav = oLi.getElementsByTagName('a');
+        for (var i = 0; i < aNav.length; i++) {
+            aNav[i].index = i;
+            bind(aNav[i], "touchstart", function () {
+                for (var i = 0; i < aNav.length; i++) {
+                    if (i <= this.index) {
+                        addClass(aNav[i], "active");
+                    }
+                    else {
+                        removeClass(aNav[i], 'active');
+                    }
+                }
+            });
+        }
+    }
 }

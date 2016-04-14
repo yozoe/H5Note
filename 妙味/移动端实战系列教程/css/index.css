@@ -1,7 +1,18 @@
 @charset "utf-8";
 
-h1 {
-    margin:0;
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1, p, h2 {
+    margin: 0;
+    font-weight: normal;
+}
+
+a,input {
+    -webkit-tap-highlight-color: rgba(255,0,0,0);
 }
 
 body {
@@ -54,71 +65,60 @@ body {
 
 /* 欢迎页 */
 @-webkit-keyframes tree {
-    100%
-    {
+    100% {
         -webkit-transform: translateY(0px);
-        opacity:1;
+        opacity: 1;
     }
 }
 
 @keyframes tree {
-    100%
-    {
+    100% {
         -webkit-transform: translateY(0px);
-        opacity:1;
+        opacity: 1;
     }
 }
 
 @keyframes logo {
-    100%
-    {
+    100% {
         opacity: 1;
     }
 }
 
 @keyframes shake {
-    0%
-    {
+    0% {
         transform: rotate(0deg);
     }
-    20%
-    {
+    20% {
         transform: rotate(30deg);
     }
-    40%
-    {
+    40% {
         transform: rotate(-20deg);
     }
-    60%
-    {
+    60% {
         transform: rotate(15deg);
     }
-    80%
-    {
+    80% {
         transform: rotate(-8deg);
     }
-    100%
-    {
+    100% {
         transform: rotate(0deg);
     }
 }
 
 @keyframes cloud {
-    0%
-    {
-      transform: translateX(0px);
+    0% {
+        transform: translateX(0px);
     }
-    100%
-    {
+    100% {
         transform: translateX(-50px);
     }
 }
 
 .tree {
     position: absolute;
-    left:0;
-    top:10%;
-    width:100%;
+    left: 0;
+    top: 10%;
+    width: 100%;
     -webkit-transform: translateY(100px);
     transform: translateY(100px);
     opacity: 0;
@@ -130,9 +130,9 @@ body {
 
 #logo {
     position: absolute;
-    left:0;
-    width:100%;
-    bottom:5%;
+    left: 0;
+    width: 100%;
+    bottom: 5%;
     text-align: center;
     opacity: 0;
     animation: logo .5s 1s;
@@ -151,7 +151,7 @@ body {
 
 .shake {
     position: absolute;
-    left:509px;
+    left: 509px;
     top: 12px;
     width: 28px;
     height: 31px;
@@ -169,7 +169,7 @@ body {
 
 .cloud {
     position: absolute;
-    background:url(../img/cloud.png) no-repeat;
+    background: url(../img/cloud.png) no-repeat;
     background-size: contain;
 }
 
@@ -195,4 +195,95 @@ body {
     width: 54px;
     height: 41px;
     animation: cloud 3s 2.8s infinite alternate linear;
+}
+
+/* 首页 */
+
+#tabPic {
+    overflow: hidden;
+    position: relative;
+}
+
+#picList {
+    overflow: hidden;
+    width: 500%;
+}
+
+#picList li {
+    float: left;
+    width: 20%;
+}
+
+#picList img {
+    width: 100%;
+    height: 342px;
+}
+
+.picMask {
+    height: 102px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.9) 0, rgba(0, 0, 0, 0.8) 10%, rgba(0, 0, 0, 0));
+}
+
+.picMask p {
+    font-size: 29px;
+    line-height: 120px;
+    text-indent: 26px;
+}
+
+.picMask nav {
+    height: 10px;
+    right: 26px;
+    top: 56px;
+    position: absolute;
+}
+
+.picMask nav a {
+    background: #fff;
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    opacity: 0.5;
+    margin-left: 15px;
+}
+
+.picMask nav a.active {
+    opacity: 1;
+}
+
+#score {
+    line-height: 60px;
+    padding: 17px;
+}
+
+#score h2 {
+    font-size: 28px;
+}
+
+#score li {
+    height: 60px;
+    position: relative;
+}
+
+#score nav {
+    position: absolute;
+    left:187px;
+    top:12px;
+}
+
+#score nav a {
+    float: left;
+    width: 38px;
+    height: 36px;
+    background: url(../img/star.png) no-repeat -38px 0;
+    margin-right:39px;
+    transition: .3s;
+}
+
+#score nav .active {
+    background-position: 0 0;
 }
