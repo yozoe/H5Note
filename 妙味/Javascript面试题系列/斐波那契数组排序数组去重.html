@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*
+        function aaa (n) {
+            if (n <= 2) {
+                return 1;
+            }
+            return aaa(n-1) + aaa(n-2);
+        }
+        */
+
+        function aaa (n) {
+
+            var num1 = 1;
+            var num2 = 1;
+            var num3 = 0;
+
+            for (var i = 0; i < n - 2; i++) {
+                num3 = num1 + num2;
+                num1 = num2;
+                num2 = num3;
+            }
+
+            return num3;
+
+        }
+
+        function maopao (arr) {
+            for (var i = 0; i < arr.length; i++) {
+                for (var j = 0; j < arr.length - i; j++) {
+                    toCon(j, j+1);
+                }
+            }
+            function toCon (prev, next) {
+                var tmp = '';
+                if (arr[prev] > arr[next]) {
+                    tmp = arr[prev];
+                    arr[prev] = arr[next];
+                    arr[next] = tmp;
+                }
+            }
+            return arr;
+        }
+
+//        alert(maopao([4]));
+
+        var arr = [4,5,1,7,2];
+
+        function xuanze (arr) {
+
+            if (arr.length == 1) {
+                return arr;
+            }
+
+            var iIndex = 0;
+            var iMin = arr[0];
+            for (var i = 0; i < arr.length; i++) {
+                if (iMin > arr[i]) {
+                    iMin = arr[i];
+                    iIndex = i;
+                }
+            }
+            var prev = arr.splice(iIndex, 1);
+            return prev.concat(xuanze(arr));
+        }
+
+
+//        alert(xuanze(arr));
+
+        var chongArr = [1,2,2,3,3,4,4];
+
+        function quchong (arr) {
+            var result = [arr[0]];
+            for (var i = 0; i < arr.length; i++) {
+                if (toCon(arr[i])) {
+                    result.push(arr[i]);
+                }
+            }
+
+            function toCon (val) {
+                for (var i = 0; i < result.length; i++) {
+                    if (result[i] == val) {
+                        return false;
+                    }
+                }
+                return true;
+            }
+
+            return result;
+        }
+
+        function quchong1 (arr) {
+            var obj = {};
+            var result = [];
+            for (var i = 0; i < arr.length; i++) {
+                if (!obj[arr[i]]) {
+                    result.push(arr[i]);
+                    obj[arr[i]] = 1;
+                }
+            }
+            return result;
+        }
+
+        alert(quchong1(chongArr));
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
