@@ -5,73 +5,39 @@
     <title></title>
     <script>
 
+        var age = 12;
 
-        function Aaa() {
-            this.name = [];
+        function hehe () {
+//            alert(this.age);
         }
 
-        Aaa.prototype.show = function() {
-            console.log("the show");
+//        alert(1&&2);
+
+//        hehe();
+
+        var hehe1 = new hehe();
+
+//        hehe1();
+
+        function A () {
+
+        }
+        function B () {
+            this.a = a;
+        }
+        function C (a) {
+            if (a) {
+                this.a = a;
+            }
         }
 
-        function Bbb() {
-            Aaa.call(this);
-        }
+        A.prototype.a = 1;
+        B.prototype.a = 1;
+        C.prototype.a = 1;
 
-        Bbb.prototype = Aaa.prototype;
-//        Bbb.prototype = new Aaa();
-
-        var b1 = new Bbb();
-        var b2 = new Bbb();
-//
-//
-        b1.name.push(45);
-//        b1.name = '呵呵';
-        console.log(b1.name);
-        console.log(b2.name);
-        b2.show();
-
-        console.log(1 - "x");
-        console.log(2 + null);
-        console.log(1 + true);
-
-//        var arr = [{name:'wd'}];
-//        delete arr[0];
-//        console.log(arr[0].name);
-
-        var x = 10;
-        var y = 20;
-
-        var z = x < y ? x++ : y++;
-        console.log(z + ' ' + x + ' ' + y);
-
-//
-//        var a = {n:1};
-//        a.x = a = {n:2};
-//        console.log(a.x);
-//
-//        var a = {n:1};
-//        a = {n:2};
-//        a.x = {n:2};
-//        console.log(a.x);
-//
-//        var a = {n:1};
-//        a = {n:2};
-//        a.x = a;
-//        console.log(a.x);
-//
-//        var a = {n:1};
-//        a.x = {n:2};
-//        a = {n:2};
-//        console.log(a.x);
-
-        var a = b = {n:'大爷'};
-        var c;
-        c = a = {n:'麻痹'};
-        console.log(a.x);
-        console.log(b.x);
-
-
+        console.log(new A());
+        console.log(new B());
+        console.log(new C(2));
     </script>
 </head>
 <body>

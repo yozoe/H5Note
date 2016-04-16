@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        .content {
+            position:absolute;
+            top:50%;
+            height:240px;
+            margin-top:-120px; /* negative half of the height */
+            background: red;
+        }
+
+        body {
+            /*height: 2000px;*/
+        }
+
+    </style>
+</head>
+<!--
+ 优点：
+适用于所有浏览器
+不需要嵌套标签
+缺点：
+没有足够空间时，content 会消失(类似div 在 body 内，当用户缩小浏览器窗口，滚动条不出现的情况)
+ -->
+<body>
+<div class="content">Content goes here</div>
+</body>
+</html>
