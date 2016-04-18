@@ -16,3 +16,7 @@ var timer = setInterval(function() {
     }
     fireCount++;
 }, 0);
+
+
+console.log(0.3);
+console.log(0.1 + 0.2);
