@@ -1,0 +1,1 @@
+{"version":3,"sources":["test.js"],"names":[],"mappings":"AAAA;;;;AAIA,IAAI,IAAI,MAAR;;AAEA,OAAO,SAAP,CAAiB,MAAjB,GAA0B,GAA1B;;AAEA,QAAQ,GAAR,CAAY,EAAE,MAAd","file":"test-compiled.js","sourcesContent":["/**\n * Created by wangdong on 16/7/27.\n */\n\nvar s = \"hehe\";\n\nString.prototype.number = 123;\n\nconsole.log(s.number);"]}

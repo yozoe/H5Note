@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        oDiv.click = functoin () {
+            this : div
+        }
+
+        oDiv.click = show;
+        function show = function () {
+            this : oDiv
+        }
+
+        oDiv.click = function () {
+            show();
+        }
+
+        function show() {
+            this : window
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
